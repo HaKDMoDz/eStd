@@ -3,3 +3,8 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\bin\Debug\System.Datab
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Database.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Database.pdb

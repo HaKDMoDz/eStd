@@ -10,3 +10,15 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.Wave
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Utils.ProgressLog.resources
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.csproj.GenerateResource.Cache
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.Fader.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.PanSlider.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.Pot.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.VolumeSlider.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Gui.WaveViewer.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\NAudio.Utils.ProgressLog.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Sound\obj\Debug\System.Sound.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Sound.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Sound.pdb

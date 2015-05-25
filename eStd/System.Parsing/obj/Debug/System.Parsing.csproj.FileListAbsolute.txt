@@ -2,3 +2,7 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\bin\Debug\System.Parsin
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\bin\Debug\System.Parsing.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Parsing.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Parsing.pdb

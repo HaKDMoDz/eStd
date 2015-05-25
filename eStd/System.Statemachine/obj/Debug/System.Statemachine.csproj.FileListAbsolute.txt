@@ -7,3 +7,12 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.S
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateMachineResources.resources
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateRepresentationResources.resources
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.ParameterConversionResources.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateConfigurationResources.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateMachineResources.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateRepresentationResources.resources
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Statemachine.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Statemachine.pdb

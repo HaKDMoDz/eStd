@@ -2,3 +2,8 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\bin\Debug\System.Networ
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\bin\Debug\System.Network.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Network.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Network.pdb

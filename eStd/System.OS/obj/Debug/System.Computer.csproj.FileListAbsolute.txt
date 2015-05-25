@@ -3,3 +3,7 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.OS\bin\Debug\System.Computer.dl
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.OS\bin\Debug\System.Computer.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.OS\obj\Debug\System.Computer.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.OS\obj\Debug\System.Computer.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.OS\obj\Debug\System.Computer.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\System.OS\obj\Debug\System.Computer.pdb
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Computer.dll
+C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Computer.pdb
