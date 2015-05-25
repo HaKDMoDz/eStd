@@ -1,0 +1,5 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\bin\Debug\System.Serialisation.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\bin\Debug\System.Serialisation.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.Serialisation.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.Serialisation.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.Serialisation.csprojResolveAssemblyReference.cache

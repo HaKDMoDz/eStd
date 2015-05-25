@@ -19,7 +19,6 @@ here we will list all libs and namespaces we will be using and coding.
 |System.Scripting      |S#                   |                                                                             |                                                 |
 |System.Scripting      |Clearscript(js, vbs) |                                                                             |                                                 |
 |System.Scripting      |PhaLanger            |                                                                             |                                                 |
-|System.Scripting      |J#                   |                                                                             |                                                 |
 |                      |                     |                                                                             |                                                 |
 |System.Extensibillity |SPS                  |http://www.codeproject.com/Articles/182970/A-Simple-Plug-In-Library-For-NET  |                                                 |
 |                      |                     |                                                                             |                                                 |
@@ -27,7 +26,7 @@ here we will list all libs and namespaces we will be using and coding.
 |                      |                     |                                                                             |                                                 |
 |System.IO.PDF         |iTextSharp           |https://github.com/itext/itextsharp                                          |                                                 |
 |                      |                     |                                                                             |                                                 |
-|System.Datastorage    |LiteDb               |                                                                             |                                                 |
+|System.Database       |LiteDb               |                                                                             |                                                 |
 |                      |                     |                                                                             |                                                 |
 |System.Runtime.Dynamic|Creek.Dynamics       |                                                                             |                                                 |
 |System.Localisation   |Creek.I18N.Gettext   |                                                                             |                                                 |

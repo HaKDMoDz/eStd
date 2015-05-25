@@ -1,0 +1,6 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\bin\Debug\System.Contracts.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\bin\Debug\System.Contracts.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\obj\Debug\System.Contracts.ExceptionMessages.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\obj\Debug\System.Contracts.csproj.GenerateResource.Cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\obj\Debug\System.Contracts.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Contracts\obj\Debug\System.Contracts.pdb

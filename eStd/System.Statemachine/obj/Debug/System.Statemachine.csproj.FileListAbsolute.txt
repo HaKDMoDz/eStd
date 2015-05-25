@@ -1,0 +1,9 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\bin\Debug\System.Statemachine.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\bin\Debug\System.Statemachine.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.ParameterConversionResources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateConfigurationResources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateMachineResources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.StateRepresentationResources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Statemachine\obj\Debug\System.Statemachine.csproj.GenerateResource.Cache

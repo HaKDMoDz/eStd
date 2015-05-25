@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.Extended\bin\Debug\System.IO.Extended.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.Extended\bin\Debug\System.IO.Extended.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.Extended\obj\Debug\System.IO.Extended.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.Extended\obj\Debug\System.IO.Extended.pdb

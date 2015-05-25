@@ -29,6 +29,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,6 +46,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlRpc\Internals\Logger.cs" />
+    <Compile Include="XmlRpc\Internals\SimpleHttpRequest.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcBoxcarRequest.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcClientProxy.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcDeserializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcErrorCodes.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcException.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcExposedAttribute.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcRequest.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcRequestDeserializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcRequestSerializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcResponder.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcResponse.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcResponseDeserializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcResponseSerializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcSerializer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcServer.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcSystemObject.cs" />
+    <Compile Include="XmlRpc\Internals\XML\XmlRpcXmlTokens.cs" />
+    <Compile Include="XmlRpc\IRpcProxy.cs" />
+    <Compile Include="XmlRpc\Proxy.cs" />
+    <Compile Include="XmlRpc\RpcClient.cs" />
+    <Compile Include="XmlRpc\RpcServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

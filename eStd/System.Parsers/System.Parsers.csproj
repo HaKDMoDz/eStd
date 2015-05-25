@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5494B069-1356-405F-8E41-03F32BC3F467}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Parsers</RootNamespace>
+    <AssemblyName>System.Parsers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandlineArguments.cs" />
+    <Compile Include="CSS\CssParser.cs" />
+    <Compile Include="CSS\CssParserDeclaration.cs" />
+    <Compile Include="CSS\CssParserRule.cs" />
+    <Compile Include="CSS\TextParser.cs" />
+    <Compile Include="Markup\HTMLDocument.cs" />
+    <Compile Include="Markup\MarkupAttribute.cs" />
+    <Compile Include="Markup\MarkupDocument.cs" />
+    <Compile Include="Markup\MarkupExtensions.cs" />
+    <Compile Include="Markup\MarkupRegexHelper.cs" />
+    <Compile Include="Markup\MarkupTag.cs" />
+    <Compile Include="Markup\XMLDocument.cs" />
+    <Compile Include="Mathematics\Expression.cs" />
+    <Compile Include="Mathematics\GroupStack.cs" />
+    <Compile Include="Mathematics\NumStack.cs" />
+    <Compile Include="Mathematics\OpStack.cs" />
+    <Compile Include="Mathematics\Stack.cs" />
+    <Compile Include="Mathematics\Var.cs" />
+    <Compile Include="MathParser.cs" />
+    <Compile Include="Multipart\BinaryData.cs" />
+    <Compile Include="Multipart\ContentTypes.cs" />
+    <Compile Include="Multipart\EFileHandlingType.cs" />
+    <Compile Include="Multipart\MultipartData.cs" />
+    <Compile Include="Multipart\MultipartParser.cs" />
+    <Compile Include="Multipart\StreamedFileData.cs" />
+    <Compile Include="Multipart\TextData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

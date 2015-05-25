@@ -1,0 +1,5 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\bin\Debug\System.Database.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\bin\Debug\System.Database.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Database\obj\Debug\System.Database.csprojResolveAssemblyReference.cache

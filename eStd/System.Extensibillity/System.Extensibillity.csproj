@@ -29,6 +29,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -39,7 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationPlugIn.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IApplicationPlugIn.cs" />
+    <Compile Include="IPluggable.cs" />
+    <Compile Include="IPlugIn.cs" />
+    <Compile Include="IPlugInApplication.cs" />
+    <Compile Include="IPlugInBasedApplication.cs" />
+    <Compile Include="LinkFinder.cs" />
+    <Compile Include="LinkItem.cs" />
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="PlugInApplication.cs" />
+    <Compile Include="PlugInApplicationAttribute.cs" />
+    <Compile Include="PlugInAttribute.cs" />
+    <Compile Include="PlugInBasedApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runnable\IRunnable.cs" />
+    <Compile Include="Runnable\IRunnablePlugIn.cs" />
+    <Compile Include="Runnable\RunnablePlugIn.cs" />
+    <Compile Include="Runnable\RunnablePlugInBasedApplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

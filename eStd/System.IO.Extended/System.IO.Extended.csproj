@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BDF80B5-2BE3-4D60-85A6-BC4F4EA105EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.IO.Extended</RootNamespace>
+    <AssemblyName>System.IO.Extended</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByteRange.cs" />
+    <Compile Include="Cache.cs" />
+    <Compile Include="ConstrainedStream.cs" />
+    <Compile Include="Detective.cs" />
+    <Compile Include="DriveDetector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSystem.cs" />
+    <Compile Include="FileType.cs" />
+    <Compile Include="FilterBuilder\FilterBuilder.cs" />
+    <Compile Include="FilterBuilder\FilterGroup.cs" />
+    <Compile Include="FilterBuilder\Helpers.cs" />
+    <Compile Include="FilterBuilder\SystemFileType.cs" />
+    <Compile Include="FS.cs" />
+    <Compile Include="InputListener.cs" />
+    <Compile Include="Internal\Binary\Binary.cs" />
+    <Compile Include="Internal\Binary\BinaryRuntime.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\BigInteger.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\Color.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\DateTime.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\Image.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\MemoryStream.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\Point.cs" />
+    <Compile Include="Internal\Binary\BinaryTypes\Size.cs" />
+    <Compile Include="Internal\Binary\Extensions.cs" />
+    <Compile Include="Internal\Binary\Reader.cs" />
+    <Compile Include="Internal\Binary\TypeBinaryDict.cs" />
+    <Compile Include="Internal\Binary\Types\BigInteger.cs" />
+    <Compile Include="Internal\Binary\Utils.cs" />
+    <Compile Include="Internal\Binary\Writer.cs" />
+    <Compile Include="Internal\Functions.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="Mouse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCodeGenerator.cs" />
+    <Compile Include="Simulator\IInputDeviceStateAdaptor.cs" />
+    <Compile Include="Simulator\IInputMessageDispatcher.cs" />
+    <Compile Include="Simulator\IInputSimulator.cs" />
+    <Compile Include="Simulator\IKeyboardSimulator.cs" />
+    <Compile Include="Simulator\IMouseSimulator.cs" />
+    <Compile Include="Simulator\InputBuilder.cs" />
+    <Compile Include="Simulator\InputSimulator.cs" />
+    <Compile Include="Simulator\KeyboardSimulator.cs" />
+    <Compile Include="Simulator\MouseButton.cs" />
+    <Compile Include="Simulator\MouseSimulator.cs" />
+    <Compile Include="Simulator\Native\HARDWAREINPUT.cs" />
+    <Compile Include="Simulator\Native\INPUT.cs" />
+    <Compile Include="Simulator\Native\InputType.cs" />
+    <Compile Include="Simulator\Native\KEYBDINPUT.cs" />
+    <Compile Include="Simulator\Native\KeyboardFlag.cs" />
+    <Compile Include="Simulator\Native\MouseFlag.cs" />
+    <Compile Include="Simulator\Native\MOUSEINPUT.cs" />
+    <Compile Include="Simulator\Native\MOUSEKEYBDHARDWAREINPUT.cs" />
+    <Compile Include="Simulator\Native\NativeMethods.cs" />
+    <Compile Include="Simulator\Native\VirtualKeyCode.cs" />
+    <Compile Include="Simulator\Native\XButton.cs" />
+    <Compile Include="Simulator\WindowsInputDeviceStateAdaptor.cs" />
+    <Compile Include="Simulator\WindowsInputMessageDispatcher.cs" />
+    <Compile Include="StringStream.cs" />
+    <Compile Include="TempFile.cs" />
+    <Compile Include="VirtualDrive.cs" />
+    <Compile Include="xConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

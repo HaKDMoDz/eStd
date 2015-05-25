@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\bin\Debug\System.Network.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\bin\Debug\System.Network.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Network\obj\Debug\System.Network.pdb

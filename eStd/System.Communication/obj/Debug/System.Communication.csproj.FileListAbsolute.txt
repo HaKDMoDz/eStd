@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Communication\bin\Debug\System.Communication.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Communication\bin\Debug\System.Communication.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Communication\obj\Debug\System.Communication.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Communication\obj\Debug\System.Communication.pdb
