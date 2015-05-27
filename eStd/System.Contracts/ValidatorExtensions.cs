@@ -23,7 +23,7 @@
 */
 #endregion
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// Extension methods for <see cref="ContractValidator{T}"/>.

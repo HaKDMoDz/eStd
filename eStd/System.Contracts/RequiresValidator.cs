@@ -27,7 +27,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// The RequiresValidator can be used for precondition checks.

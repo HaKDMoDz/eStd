@@ -1,10 +1,11 @@
 ﻿using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
+using System.Communication.XmlRpc;
 using System.Linq;
 using Rpc.Internals;
 
-namespace Rpc
+namespace System.Communication.XmlRpc
 {
     public class RpcClient
     {
@@ -15,7 +16,6 @@ namespace Rpc
 
 
         public dynamic CreateProxy<T>()
-            where T : IRpcProxy
         {
             Type t = typeof(T);
             

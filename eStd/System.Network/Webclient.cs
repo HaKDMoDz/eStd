@@ -3,9 +3,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace Creek.Net
+namespace System.Network
 {
-    public class WebClient
+    public class PausableWebClient
     {
         private readonly System.Net.WebClient wc;
         private string _url;
@@ -13,7 +13,7 @@ namespace Creek.Net
 
         private bool finish;
 
-        public WebClient()
+        public PausableWebClient()
         {
             wc = new System.Net.WebClient();
         }
@@ -41,7 +41,7 @@ namespace Creek.Net
             wc.CancelAsync();
         }
 
-        public void Resume(WebClient wc)
+        public void Resume()
         {
             long lStartPos = 0;
             FileStream fs = null;

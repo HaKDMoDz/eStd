@@ -2,7 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\bin\Debug\Syste
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\bin\Debug\System.Runtime.Dynamic.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\obj\Debug\System.Runtime.Dynamic.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\obj\Debug\System.Runtime.Dynamic.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\obj\Debug\System.Runtime.Dynamic.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Runtime.Dynamic\obj\Debug\System.Runtime.Dynamic.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Runtime.Dynamic.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Runtime.Dynamic.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Runtime.Dynamic.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Runtime.Dynamic.pdb

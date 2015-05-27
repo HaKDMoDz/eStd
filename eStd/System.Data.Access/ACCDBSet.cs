@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public class ACCDBSet<T> : Query<T> where T : new()
     {

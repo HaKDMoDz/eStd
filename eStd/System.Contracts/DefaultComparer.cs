@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// By letting the methods of the ValidatorExtensions class call this static field, it saves us a call to 

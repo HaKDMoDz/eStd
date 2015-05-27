@@ -1,7 +1,7 @@
 ﻿using System.Management;
 using System.Windows.Forms;
 
-namespace Creek.Info
+namespace System.Computer
 {
     public class Battery
     {

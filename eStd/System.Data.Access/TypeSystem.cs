@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     internal static class TypeSystem
     {

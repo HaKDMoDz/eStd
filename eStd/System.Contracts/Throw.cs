@@ -29,7 +29,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Linq.Expressions;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// All throw logic is factored out of the public extension methods and put in this helper class. This 

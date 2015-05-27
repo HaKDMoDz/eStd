@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Net.Sockets;
+using System.Network.Server;
 using System.Text;
 using System.Threading;
 
-namespace Creek.Net.Server
+namespace System.Network.Server
 {
     class RequestHandler
     {

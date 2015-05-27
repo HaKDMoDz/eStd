@@ -1,2 +1,2 @@
 # eStd
-This project is an exstention of dot net.
+This project is an extension of .net.

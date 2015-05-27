@@ -8,7 +8,7 @@ using System.Text;
 using System.Web;
 using System.Web.Caching;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     /// <remarks>
     /// Copyright (c) 2010 Pete Montgomery.

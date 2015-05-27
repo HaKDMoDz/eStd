@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.DrawingEx.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.DrawingEx.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.DrawingEx\obj\Debug\System.DrawingEx.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.DrawingEx\obj\Debug\System.DrawingEx.pdb

@@ -4,9 +4,7 @@ using System.Linq;
 using System.Data;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using Furesoft.Creek.Office.Access;
-
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public static class TypeExtension
     {

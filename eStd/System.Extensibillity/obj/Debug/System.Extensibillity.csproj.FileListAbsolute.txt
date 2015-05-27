@@ -2,7 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensibillity\bin\Debug\System
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensibillity\bin\Debug\System.Extensibillity.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensibillity\obj\Debug\System.Extensibillity.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensibillity\obj\Debug\System.Extensibillity.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Extensibillity\obj\Debug\System.Extensibillity.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Extensibillity\obj\Debug\System.Extensibillity.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Extensibillity.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Extensibillity.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Extensibillity.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Extensibillity.pdb

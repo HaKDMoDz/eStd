@@ -1,4 +1,4 @@
-﻿namespace Furesoft.Creek.Office.Access.Classes
+﻿namespace System.Data.Access
 {
     class JoinTable
     {

@@ -29,7 +29,7 @@ using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// Entry point methods to start validating pre- and postconditions.

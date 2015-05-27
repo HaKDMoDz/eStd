@@ -1,7 +1,7 @@
 using System.Management;
 using Microsoft.Win32;
 
-namespace Creek.Info
+namespace System.Computer
 {
     public class Bios
     {

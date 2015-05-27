@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.IO.VFilesystem.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.IO.VFilesystem.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.VFilesystem\obj\Debug\System.IO.VFilesystem.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.VFilesystem\obj\Debug\System.IO.VFilesystem.pdb

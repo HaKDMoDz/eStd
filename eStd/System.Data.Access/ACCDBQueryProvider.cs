@@ -5,9 +5,8 @@ using System.Collections;
 using System.Data;
 using System.Reflection;
 using System.Linq.Expressions;
-using Furesoft.Creek.Office.Access.Classes;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     class ACCDBQueryProvider<T> : QueryProvider where T : new()
     {

@@ -27,7 +27,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     // Collection checks
     public static partial class ValidatorExtensions

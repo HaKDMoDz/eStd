@@ -2,7 +2,7 @@
 using System.Linq;
 using Rpc.Internals;
 
-namespace Rpc
+namespace System.Communication.XmlRpc
 {
     public class RpcServer
     {
@@ -15,11 +15,6 @@ namespace Rpc
         public void AddListener(string name, object obj)
         {
             server.Add(name, obj);
-        }
-
-        public void Register(string name, Delegate d)
-        {
-            server.Add(name, new { d });
         }
 
         public void AddListener(object obj)

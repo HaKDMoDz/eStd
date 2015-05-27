@@ -50,6 +50,7 @@
     <Compile Include="CSS\CssParserDeclaration.cs" />
     <Compile Include="CSS\CssParserRule.cs" />
     <Compile Include="CSS\TextParser.cs" />
+    <Compile Include="Function.cs" />
     <Compile Include="Markup\HTMLDocument.cs" />
     <Compile Include="Markup\MarkupAttribute.cs" />
     <Compile Include="Markup\MarkupDocument.cs" />

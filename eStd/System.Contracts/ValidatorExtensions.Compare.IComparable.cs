@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     // Fallback checks for all IComparable types that don't have an explicit overload
     public static partial class ValidatorExtensions

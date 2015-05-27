@@ -2,7 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Localisation\bin\Debug\System.L
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Localisation\bin\Debug\System.Localisation.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Localisation\obj\Debug\System.Localisation.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Localisation\obj\Debug\System.Localisation.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Localisation\obj\Debug\System.Localisation.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Localisation\obj\Debug\System.Localisation.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Localisation.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Localisation.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Localisation.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Localisation.pdb

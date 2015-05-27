@@ -2,7 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.PDF\bin\Debug\System.IO.PDF.
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.PDF\bin\Debug\System.IO.PDF.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.PDF\obj\Debug\System.IO.PDF.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.IO.PDF\obj\Debug\System.IO.PDF.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.IO.PDF.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.IO.PDF.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.IO.PDF\obj\Debug\System.IO.PDF.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.IO.PDF\obj\Debug\System.IO.PDF.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.IO.PDF.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.IO.PDF.pdb

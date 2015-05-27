@@ -2,7 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsers\bin\Debug\System.Parser
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsers\bin\Debug\System.Parsers.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsers\obj\Debug\System.Parsers.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsers\obj\Debug\System.Parsers.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Parsers\obj\Debug\System.Parsers.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Parsers\obj\Debug\System.Parsers.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Parsers.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Parsers.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Parsers.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Parsers.pdb

@@ -25,7 +25,7 @@
 
 using System;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     // Comparable checks for byte
     public static partial class ValidatorExtensions

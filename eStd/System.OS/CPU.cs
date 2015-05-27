@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32;
 using System.Management;
 
-namespace Creek.Info
+namespace System.Computer
 {
     public class CPU
     {

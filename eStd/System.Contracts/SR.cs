@@ -27,7 +27,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Resources;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// String Resource helper class

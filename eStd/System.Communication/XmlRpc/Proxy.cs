@@ -1,10 +1,11 @@
 using System;
+using System.Communication;
 using System.Dynamic;
 using System.Linq;
 
-namespace Rpc
+namespace System.Communication.XmlRpc
 {
-    public class Proxy : DynamicObject, IRpcProxy
+    public class Proxy : DynamicObject
     {
         public Proxy()
         {

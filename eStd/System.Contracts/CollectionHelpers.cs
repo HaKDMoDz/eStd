@@ -27,7 +27,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// Helper methods for the Collection validation methods of the <see cref="ValidatorExtensions"/> methods.

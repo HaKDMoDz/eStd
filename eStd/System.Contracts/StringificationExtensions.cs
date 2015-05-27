@@ -28,7 +28,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// An internal helper class with extension methods for converting an object to a string representation.

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Collections;
 using System.Linq.Expressions;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public class Query<T> : IOrderedQueryable<T>
     {

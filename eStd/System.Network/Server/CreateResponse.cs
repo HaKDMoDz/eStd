@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using Microsoft.Win32;
 
-namespace Creek.Net.Server
+namespace System.Network.Server
 {
     public class CreateResponse
     {

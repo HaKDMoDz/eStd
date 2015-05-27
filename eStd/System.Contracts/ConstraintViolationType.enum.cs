@@ -23,7 +23,7 @@
 */
 #endregion
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// This enumeration is used to determine the type of exception the validator should throw.

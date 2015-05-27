@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Drawing.PSD.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Drawing.PSD.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Drawing.PSD\obj\Debug\System.Drawing.PSD.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Drawing.PSD\obj\Debug\System.Drawing.PSD.pdb

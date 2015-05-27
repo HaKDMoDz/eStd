@@ -1,6 +1,6 @@
 ﻿using System.Management;
 
-namespace Creek.Info
+namespace System.Computer
 {
     public class GraphicCard
     {

@@ -25,7 +25,7 @@
 
 using System;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     // String checks
     public static partial class ValidatorExtensions

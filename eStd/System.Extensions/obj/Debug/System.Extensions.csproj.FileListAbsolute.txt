@@ -5,8 +5,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensions\bin\Debug\System.Run
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensions\bin\Debug\System.Runtime.Dynamic.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensions\obj\Debug\System.Extensions.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Extensions\obj\Debug\System.Extensions.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Extensions\obj\Debug\System.Extensions.csprojResolveAssemblyReference.cache
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Extensions\obj\Debug\System.Extensions.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Extensions\obj\Debug\System.Extensions.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Extensions.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Extensions.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Extensions.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Extensions.pdb

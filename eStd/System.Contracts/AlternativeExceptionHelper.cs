@@ -26,7 +26,7 @@
 using System;
 using System.Reflection;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// Internal helper class to cache a <see cref="AlternativeExceptionCondition"/> and 

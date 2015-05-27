@@ -25,7 +25,7 @@
 
 using System;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// The EnsuresValidator can be used for postcondition checks.

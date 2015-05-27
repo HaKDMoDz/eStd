@@ -27,7 +27,7 @@ using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     // Checks on evaluations
     public static partial class ValidatorExtensions

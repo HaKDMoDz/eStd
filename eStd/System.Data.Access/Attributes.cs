@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public static class TypeExtensions
     {

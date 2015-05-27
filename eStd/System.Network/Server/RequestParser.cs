@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Creek.Net.Server
+namespace System.Network.Server
 {
     public class RequestParser
     {

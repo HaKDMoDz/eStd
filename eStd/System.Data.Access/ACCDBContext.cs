@@ -3,7 +3,7 @@ using System.Linq;
 using System.Data;
 using System.Reflection;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public abstract class ACCDBContext : IDisposable
     {

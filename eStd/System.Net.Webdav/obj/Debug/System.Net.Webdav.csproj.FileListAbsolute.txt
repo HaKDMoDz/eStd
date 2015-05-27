@@ -1,0 +1,5 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.Webdav.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.Webdav.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.Webdav\obj\Debug\System.Net.Webdav.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.Webdav\obj\Debug\System.Net.Webdav.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.Webdav\obj\Debug\System.Net.Webdav.csprojResolveAssemblyReference.cache

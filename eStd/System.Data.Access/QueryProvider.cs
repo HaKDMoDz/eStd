@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Furesoft.Creek.Office.Access
+namespace System.Data.Access
 {
     public abstract class QueryProvider : IQueryProvider
     {

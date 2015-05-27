@@ -1,0 +1,8 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\bin\Debug\UpdateNotifire.exe.config
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\bin\Debug\UpdateNotifire.exe
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\bin\Debug\UpdateNotifire.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\obj\Debug\UpdateNotifire.Properties.Resources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\obj\Debug\UpdateNotifire.csproj.GenerateResource.Cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\obj\Debug\UpdateNotifire.exe
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\obj\Debug\UpdateNotifire.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\UpdateNotifire\obj\Debug\UpdateNotifire.csprojResolveAssemblyReference.cache

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Creek.Net.Server
+namespace System.Network.Server
 {
     class ServerCache
     {

@@ -2,9 +2,6 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Scripting\bin\Debug\System.Scri
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Scripting\bin\Debug\System.Scripting.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Scripting.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Scripting.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.csprojResolveAssemblyReference.cache
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.csprojResolveAssemblyReference.cache
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Scripting\obj\Debug\System.Scripting.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Scripting.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Scripting.pdb

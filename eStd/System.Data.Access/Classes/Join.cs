@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Furesoft.Creek.Office.Access.Classes
+namespace System.Data.Access
 {
     class Join
     {

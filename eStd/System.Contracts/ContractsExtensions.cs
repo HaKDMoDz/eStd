@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     public static class ContractsExtensions
     {

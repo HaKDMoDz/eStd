@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net;
 
-namespace Creek.Net
+namespace System.Network
 {
     public class XmlHttpRequest
     {

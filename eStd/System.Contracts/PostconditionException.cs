@@ -27,7 +27,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// The exception that is thrown when a method's postcondition is not valid.

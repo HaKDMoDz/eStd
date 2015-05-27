@@ -1,4 +1,4 @@
-﻿namespace Furesoft.Creek.Office.Access
+﻿namespace System.Data.Access
 {
     class RawSQL
     {

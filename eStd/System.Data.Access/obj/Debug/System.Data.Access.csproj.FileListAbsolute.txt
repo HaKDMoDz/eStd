@@ -2,8 +2,5 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Data.Access\bin\Debug\System.Da
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Data.Access\bin\Debug\System.Data.Access.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Data.Access\obj\Debug\System.Data.Access.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Data.Access\obj\Debug\System.Data.Access.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Data.Access\obj\Debug\System.Data.Access.csprojResolveAssemblyReference.cache
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Data.Access\obj\Debug\System.Data.Access.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\System.Data.Access\obj\Debug\System.Data.Access.pdb
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Data.Access.dll
-C:\Users\Emile\Documents\GitHub\eStd\eStd\Build\System.Data.Access.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Data.Access.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Data.Access.pdb

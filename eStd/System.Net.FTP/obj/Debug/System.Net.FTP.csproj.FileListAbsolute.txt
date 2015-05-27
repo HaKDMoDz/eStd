@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.FTP.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.FTP.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.FTP\obj\Debug\System.Net.FTP.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.FTP\obj\Debug\System.Net.FTP.pdb

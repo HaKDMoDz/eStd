@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.Torrent.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Net.Torrent.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.Torrent\obj\Debug\System.Net.Torrent.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Net.Torrent\obj\Debug\System.Net.Torrent.pdb

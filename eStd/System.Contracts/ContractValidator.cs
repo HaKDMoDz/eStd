@@ -31,7 +31,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// Enables validation of pre- and postconditions. This class isn't used directly by developers. Instead 

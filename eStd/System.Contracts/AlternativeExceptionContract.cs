@@ -27,7 +27,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Creek.Contracts
+namespace System.Contracts
 {
     /// <summary>
     /// An instance of this type is returned from the 

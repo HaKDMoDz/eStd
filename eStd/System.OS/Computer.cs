@@ -1,4 +1,4 @@
-﻿namespace Creek.Info
+﻿namespace System.Computer
 {
     public class Computer
     {
