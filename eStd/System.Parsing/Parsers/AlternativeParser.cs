@@ -1,9 +1,10 @@
 using System;
-using Eto.Parse;
+using System.Parsing;
+using System.Parsing.Parsers;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class AlternativeParser : ListParser
 	{

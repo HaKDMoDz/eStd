@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace Creek.Dynamics
+namespace System.Runtime.Dynamic
 {
     public class ExpandoObjectHelper
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Creek.I18N.Gettext.Plural
+namespace System.Localisation.Plural
 {
     /// <summary>
     /// Plural forms processor.

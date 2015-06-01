@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace Creek.Parsers.CSS
+namespace System.Parsers.CSS
 {
     /// <summary>
     /// Class to parse CSS text into data structures.

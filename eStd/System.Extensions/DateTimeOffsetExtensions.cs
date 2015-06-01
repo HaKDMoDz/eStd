@@ -1,15 +1,12 @@
 ﻿using System;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for the DateTimeOffset data type.
     /// </summary>
     public static class DateTimeOffsetExtensions
     {
-
-
-
         /// <summary>
         /// 	Converts a DateTimeOffset into a DateTime using the local system time zone.
         /// </summary>

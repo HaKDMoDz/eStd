@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains security-related extensions.

@@ -1,7 +1,8 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	partial class Parser
 	{
@@ -101,4 +102,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

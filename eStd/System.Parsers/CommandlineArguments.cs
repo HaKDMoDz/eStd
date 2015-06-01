@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
 
-namespace Creek.Parsers
+namespace System.Parsers
 {
     /// <summary>
     /// Arguments class

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
 using System.Text.RegularExpressions;
 
-namespace Creek.IO
+namespace System.IO
 {
     public class xConfiguration : Dictionary<string, Dictionary<string, string>>
     {

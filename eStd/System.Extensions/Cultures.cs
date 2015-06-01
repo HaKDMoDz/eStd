@@ -1,4 +1,4 @@
-﻿namespace Creek.Extensions
+﻿namespace System.Extensions
 {
     /// <summary>
     /// Enumeration of all CultureInfo Names using the DisplayStringAttribute to allow 

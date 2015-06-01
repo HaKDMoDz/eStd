@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+using System.Database.Database.Collections;
+using System.Database.Document;
+using System.Database.Query.Impl;
+using System.Database.Storage.Services;
+using System.Database.Storage.Structures;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Query
 {
     internal enum QueryExecuteMode { IndexSeek, FullScan }
 

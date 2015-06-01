@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Database.Database;
+using System.Database.Database.Collections;
+using System.Database.Document;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.Tools
 {
     /// <summary>
     /// Creates a field that is a reference for another document from another collection. T is another type

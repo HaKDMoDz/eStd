@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Helper Methods for Connecting SysImageList to Common Controls.

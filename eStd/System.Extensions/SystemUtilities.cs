@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains various operating system-related tools.

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Query.Impl;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
-using System.Text;
-using System.Text.RegularExpressions;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {

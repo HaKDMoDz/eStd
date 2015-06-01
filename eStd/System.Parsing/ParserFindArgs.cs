@@ -1,6 +1,7 @@
 using System;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public class ParserFindArgs : ParserChain
 	{

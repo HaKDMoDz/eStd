@@ -27,8 +27,8 @@
 using System;
 using System.Globalization;
 using System.Runtime.Serialization;
+using System.Serialisation.Json.Linq;
 using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
 
 namespace Newtonsoft.Json.Serialization
 {

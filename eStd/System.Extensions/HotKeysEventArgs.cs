@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// HotKeyModifiers énumération

@@ -1,14 +1,14 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Text;
+using System.Parsing.Parsers;
+using System.Parsing.Writers.Code;
 using System.Linq;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class CharSetWriter : InverseWriter<CharSetTerminal>
 	{
-		public override void WriteContents(TextParserWriterArgs args, CharSetTerminal tester, string name)
-		{
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, CharSetTerminal tester, string name)
+        {
 			base.WriteContents(args, tester, name);
 			args.Output.WriteLine("{0}.Characters = new char[] {{ {1} }}; // {2}", 
 			                      name, 
@@ -17,4 +17,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

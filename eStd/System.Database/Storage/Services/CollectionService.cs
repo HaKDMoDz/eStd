@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Storage.Services
 {
     internal class CollectionService
     {
@@ -91,7 +89,7 @@ namespace LiteDB
             foreach (var index in col.GetIndexes(true))
             {
                 // get all nodes from index
-                var nodes = _indexer.FindAll(index, Query.Ascending);
+                var nodes = _indexer.FindAll(index, Query.Query.Ascending);
 
                 foreach (var node in nodes)
                 {

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Database.Database;
+using System.Database.Document;
+using System.Database.Storage.Structures;
 using LiteDB;
 using System.Diagnostics;
 using System.Linq;

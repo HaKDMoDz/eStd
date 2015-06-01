@@ -1,0 +1,13 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\SamplesBrowser.exe.config
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\SamplesBrowser.exe
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\SamplesBrowser.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\MainWindow.baml
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\MainWindow.g.cs
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\App.g.cs
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser_MarkupCompile.cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.g.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.Properties.Resources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.csproj.GenerateResource.Cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.exe
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.pdb

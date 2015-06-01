@@ -1,8 +1,9 @@
 using System;
+using System.Parsing;
 using System.Text;
 using System.Globalization;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class StringParser : Parser
 	{

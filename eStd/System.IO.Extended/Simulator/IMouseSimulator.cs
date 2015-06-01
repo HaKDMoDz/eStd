@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// The service contract for a mouse simulator for the Windows platform.

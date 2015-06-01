@@ -1,24 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Parsers.Multipart;
 using System.Text;
 using System.Text.RegularExpressions;
 
-//
-// HTTPMultipartParser
-// 
-// Parses a multipart form data stream and returns the included fields.
-// Has the option to read included files into memory and return them as fields
-//   or to stream those files to reduce memory consumption.
-//   
-// 2013 Filipe Silva https://github.com/Darchangel
-//
-
-///<summary></summary>
-
-namespace Creek.Parsers.Multipart
-{ //Feel free to change this if needed
-
+namespace System.Parsers.Multipart
+{ 
     //Delegate types to be included in returned streamed file objects
     /// <summary>
     /// Delegate for writing a file included in a multipart request

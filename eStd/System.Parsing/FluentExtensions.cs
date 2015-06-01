@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using Eto.Parse.Parsers;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Extensions for fluent API to define a grammar

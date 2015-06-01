@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Query;
 using System.Linq;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {
@@ -62,7 +62,7 @@ namespace LiteDB
                 var value = id.Normalize(col.PK.Options);
 
                 // find indexNode from pk index
-                var indexNode = this.Database.Indexer.Find(col.PK, value, false, Query.Ascending);
+                var indexNode = this.Database.Indexer.Find(col.PK, value, false, Query.Query.Ascending);
 
                 // if not found document, no updates
                 if (indexNode == null)

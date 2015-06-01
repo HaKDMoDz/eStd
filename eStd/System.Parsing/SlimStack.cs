@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Stack implementation using a non-shrinking list for great performance
@@ -58,4 +58,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

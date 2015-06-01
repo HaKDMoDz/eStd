@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Creek.IO
+namespace System.IO
 {
     public class Mouse
     {

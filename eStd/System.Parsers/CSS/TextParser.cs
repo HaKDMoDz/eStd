@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Creek.Parsers.CSS
+namespace System.Parsers.CSS
 {
     public class TextParser
     {

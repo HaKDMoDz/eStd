@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class BooleanExtensions
     {

@@ -1,4 +1,6 @@
-namespace Creek.Parsers.Markup
+using System.Parsers.Markup;
+
+namespace System.Parsers.Markup
 {
     public class XMLDocument : MarkupDocument
     {

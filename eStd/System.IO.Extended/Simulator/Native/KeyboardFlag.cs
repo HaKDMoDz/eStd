@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creek.IO.Simulator.Native
+namespace System.IO.Simulator.Native
 {
     /// <summary>
     /// Specifies various aspects of a keystroke. This member can be certain combinations of the following values.

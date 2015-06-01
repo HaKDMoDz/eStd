@@ -1,4 +1,6 @@
-﻿namespace Creek.Extensibility.Plugins
+﻿using System.Extensibillity;
+
+namespace System.Extensibillity
 {
     /// <summary>
     /// This class is used to make possible to create a plugin that implements

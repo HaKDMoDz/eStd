@@ -4,4 +4,3 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.Serialisation.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Serialisation.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Serialisation.pdb
-C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Serialisation\obj\Debug\System.Serialisation.csprojResolveAssemblyReference.cache

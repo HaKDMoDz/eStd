@@ -1,7 +1,7 @@
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extension methods for the PropertyGrid data type

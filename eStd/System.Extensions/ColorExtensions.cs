@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class ColorExtensions
     {

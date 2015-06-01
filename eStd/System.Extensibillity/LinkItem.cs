@@ -1,4 +1,4 @@
-﻿namespace Creek.Plugins.Internal.Tools
+﻿namespace System.Extensibillity
 {
     internal struct LinkItem
     {

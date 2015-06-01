@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.VFilesystem.Collections;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SharpFileSystem.Collections;
 
 namespace SharpFileSystem
 {

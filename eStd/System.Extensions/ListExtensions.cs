@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text.RegularExpressions;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for all kind of Lists implementing the IList&lt;T&gt; interface

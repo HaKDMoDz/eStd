@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Lib.Parsing.Mathematics;
 
-namespace Creek.Parsers.Mathematics
+namespace System.Parsers.Mathematics
 {
     //ToDo: implement brackets
     //ToDo: implement functions
@@ -18,7 +17,7 @@ namespace Creek.Parsers.Mathematics
         public object Result { get; set; }
         public string Term { get; internal set; }
 
-        public static Expression Parse(string expr, Var[] vars)
+        public static Expression Parse(string expr, VariableStack[] vars)
         {
             var returns = new Expression {Term = expr};
 

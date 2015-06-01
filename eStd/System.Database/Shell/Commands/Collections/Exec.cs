@@ -1,12 +1,17 @@
-﻿using Microsoft.CSharp;
+﻿using System.Database.Database;
+using System.Database.Database.Collections;
+using System.Database.Document;
+using System.Database.Shell.Commands.Collections;
+using System.Database.Utils;
+using LiteDB;
+using LiteDB.Shell;
+using Microsoft.CSharp;
 using System;
 using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
-namespace LiteDB.Shell.Commands
+namespace System.Database.Shell.Commands.Collections
 {
     internal class CollectionExec : BaseCollection, ILiteCommand
     {
@@ -18,7 +23,7 @@ namespace LiteDB.Shell.Commands
         public BsonValue Execute(LiteDatabase db, StringScanner s)
         {
             var col = this.ReadCollection(db, s);
-            var query = s.Match("{") ? Query.All() : this.ReadQuery(s);
+            var query = s.Match("{") ? Query.Query.All() : this.ReadQuery(s);
             var code = DynamicCode.GetCode(s);
 
             var docs = col.Find(query).ToArray();

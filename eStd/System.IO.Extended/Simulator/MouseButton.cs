@@ -1,4 +1,4 @@
-﻿namespace Creek.IO.Simulator
+﻿namespace System.IO.Simulator
 {
     /// <summary>
     /// The mouse button

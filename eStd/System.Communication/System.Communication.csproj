@@ -133,6 +133,12 @@
   <ItemGroup>
     <None Include="key.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Serialisation\System.Serialisation.csproj">
+      <Project>{21327402-41ef-4bcb-a8f3-360c6b40555f}</Project>
+      <Name>System.Serialisation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

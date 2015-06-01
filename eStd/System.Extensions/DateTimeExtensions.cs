@@ -8,7 +8,7 @@
 
 using System;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains date-related extensions.

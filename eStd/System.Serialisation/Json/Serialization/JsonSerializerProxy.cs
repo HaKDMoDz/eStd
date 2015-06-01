@@ -26,6 +26,7 @@
 using System;
 using System.Globalization;
 using System.Runtime.Serialization.Formatters;
+using System.Serialisation.Json;
 using Newtonsoft.Json.Utilities;
 using System.Runtime.Serialization;
 

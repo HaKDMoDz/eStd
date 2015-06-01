@@ -1,7 +1,5 @@
-﻿namespace Creek.IO
+﻿namespace System.IO
 {
-
-
     /// <summary>
     /// Little data structure to hold information about file types. 
     /// Holds information about binary header at the start of the file

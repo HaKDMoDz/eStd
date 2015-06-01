@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for all comparable objects eg. string, DateTime, numeric values ...

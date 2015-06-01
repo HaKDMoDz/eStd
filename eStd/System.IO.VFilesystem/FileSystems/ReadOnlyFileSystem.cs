@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
-namespace SharpFileSystem.FileSystems
+namespace System.IO.VFilesystem.FileSystems
 {
-    public class ReadOnlyFileSystem: IFileSystem
+    public class ReadOnlyFileSystem : SharpFileSystem.IFileSystem
     {
-        public IFileSystem FileSystem { get; private set; }
+        public SharpFileSystem.IFileSystem FileSystem { get; private set; }
 
-        public ReadOnlyFileSystem(IFileSystem fileSystem)
+        public ReadOnlyFileSystem(SharpFileSystem.IFileSystem fileSystem)
         {
             FileSystem = fileSystem;
         }
@@ -20,34 +19,34 @@ namespace SharpFileSystem.FileSystems
             FileSystem.Dispose();
         }
 
-        public ICollection<FileSystemPath> GetEntities(FileSystemPath path)
+        public ICollection<SharpFileSystem.FileSystemPath> GetEntities(SharpFileSystem.FileSystemPath path)
         {
             return FileSystem.GetEntities(path);
         }
 
-        public bool Exists(FileSystemPath path)
+        public bool Exists(SharpFileSystem.FileSystemPath path)
         {
             return FileSystem.Exists(path);
         }
 
-        public Stream OpenFile(FileSystemPath path, FileAccess access)
+        public Stream OpenFile(SharpFileSystem.FileSystemPath path, FileAccess access)
         {
             if (access != FileAccess.Read)
                 throw new InvalidOperationException("This is a read-only filesystem.");
             return FileSystem.OpenFile(path, access);
         }
 
-        public Stream CreateFile(FileSystemPath path)
+        public Stream CreateFile(SharpFileSystem.FileSystemPath path)
         {
             throw new InvalidOperationException("This is a read-only filesystem.");
         }
 
-        public void CreateDirectory(FileSystemPath path)
+        public void CreateDirectory(SharpFileSystem.FileSystemPath path)
         {
             throw new InvalidOperationException("This is a read-only filesystem.");
         }
 
-        public void Delete(FileSystemPath path)
+        public void Delete(SharpFileSystem.FileSystemPath path)
         {
             throw new InvalidOperationException("This is a read-only filesystem.");
         }

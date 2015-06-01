@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods any kind of streams

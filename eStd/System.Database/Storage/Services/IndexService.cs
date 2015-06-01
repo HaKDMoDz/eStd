@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Storage.Structures;
 using System.Linq;
-using System.Text;
+using LiteDB;
+using LiteDB;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Storage.Services
 {
     /// <summary>
     /// Implement a Index service - Add/Remove index nodes on SkipList
@@ -213,7 +216,7 @@ namespace LiteDB
         public void DropIndex(CollectionIndex index)
         {
             var pages = new HashSet<uint>();
-            var nodes = this.FindAll(index, Query.Ascending);
+            var nodes = this.FindAll(index, Query.Query.Ascending);
 
             // get reference for pageID from all index nodes
             foreach (var node in nodes)
@@ -256,7 +259,7 @@ namespace LiteDB
 
         public IEnumerable<IndexNode> FindAll(CollectionIndex index, int order)
         {
-            var cur = this.GetNode(order == Query.Ascending ? index.HeadNode : index.TailNode);
+            var cur = this.GetNode(order == Query.Query.Ascending ? index.HeadNode : index.TailNode);
 
             while (!cur.NextPrev(0, order).IsEmpty)
             {
@@ -275,7 +278,7 @@ namespace LiteDB
         /// </summary>
         public IndexNode Find(CollectionIndex index, BsonValue value, bool sibling, int order)
         {
-            var cur = this.GetNode(order == Query.Ascending ? index.HeadNode : index.TailNode);
+            var cur = this.GetNode(order == Query.Query.Ascending ? index.HeadNode : index.TailNode);
 
             for (var i = IndexNode.MAX_LEVEL_LENGTH - 1; i >= 0; i--)
             {

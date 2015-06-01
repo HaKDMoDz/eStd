@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Database.Database;
+using System.Database.Document;
+using System.Database.Utils;
 using System.IO;
 using System.Linq;
 using System.Text;

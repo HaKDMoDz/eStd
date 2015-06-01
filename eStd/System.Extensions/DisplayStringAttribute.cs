@@ -1,6 +1,6 @@
 using System;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Specifies description for a member of the enum type for display to the UI

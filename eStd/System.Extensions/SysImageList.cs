@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
 
     #region Public Enumerations

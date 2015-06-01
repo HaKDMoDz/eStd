@@ -54,29 +54,12 @@
     <Compile Include="DriveDetector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FileSystem.cs" />
     <Compile Include="FileType.cs" />
     <Compile Include="FilterBuilder\FilterBuilder.cs" />
     <Compile Include="FilterBuilder\FilterGroup.cs" />
     <Compile Include="FilterBuilder\Helpers.cs" />
     <Compile Include="FilterBuilder\SystemFileType.cs" />
-    <Compile Include="FS.cs" />
     <Compile Include="InputListener.cs" />
-    <Compile Include="Internal\Binary\Binary.cs" />
-    <Compile Include="Internal\Binary\BinaryRuntime.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\BigInteger.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\Color.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\DateTime.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\Image.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\MemoryStream.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\Point.cs" />
-    <Compile Include="Internal\Binary\BinaryTypes\Size.cs" />
-    <Compile Include="Internal\Binary\Extensions.cs" />
-    <Compile Include="Internal\Binary\Reader.cs" />
-    <Compile Include="Internal\Binary\TypeBinaryDict.cs" />
-    <Compile Include="Internal\Binary\Types\BigInteger.cs" />
-    <Compile Include="Internal\Binary\Utils.cs" />
-    <Compile Include="Internal\Binary\Writer.cs" />
     <Compile Include="Internal\Functions.cs" />
     <Compile Include="Keyboard.cs" />
     <Compile Include="Mouse.cs" />

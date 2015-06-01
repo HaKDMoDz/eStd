@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Creek.IO.Simulator.Native
+namespace System.IO.Simulator.Native
 {
 #pragma warning disable 649
     /// <summary>

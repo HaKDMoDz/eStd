@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extension methods for System.Windows.Forms.TabControl

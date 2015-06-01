@@ -1,6 +1,6 @@
 using System;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public abstract class Scanner
 	{

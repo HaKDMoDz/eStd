@@ -1,10 +1,9 @@
 using System;
-using Eto.Parse.Parsers;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public class ParserWriterArgs
 	{

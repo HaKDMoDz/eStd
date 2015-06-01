@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {

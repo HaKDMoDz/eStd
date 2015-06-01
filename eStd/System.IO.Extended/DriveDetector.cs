@@ -9,7 +9,7 @@ using Microsoft.Win32.SafeHandles;
 
 // DriveDetector - rev. 1, Oct. 31 2007
 
-namespace Creek.IO
+namespace System.IO
 {
     /// <summary>
     /// Hidden Form which we use to receive Windows messages about flash drives

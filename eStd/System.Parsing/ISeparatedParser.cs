@@ -1,7 +1,6 @@
 using System;
-using Eto.Parse;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing
 {
 	public interface ISeparatedParser
 	{

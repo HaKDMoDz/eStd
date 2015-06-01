@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace Creek.Parsers.Multipart {
+namespace System.Parsers.Multipart
+{
     /// <summary>
     /// Class to determine if data is binary or not from its media type
     /// </summary>

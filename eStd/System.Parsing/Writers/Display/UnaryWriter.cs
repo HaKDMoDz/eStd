@@ -1,17 +1,13 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
 
-namespace Eto.Parse.Writers.Display
+namespace System.Parsing.Writers.Display
 {
-	public class UnaryWriter<T> : ParserWriter<T>
-		where T: UnaryParser
-	{
-		public override void WriteContents(TextParserWriterArgs args, T parser, string name)
-		{
+    public class UnaryWriter<T> : ParserWriter<T>
+        where T : System.Parsing.UnaryParser
+    {
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, T parser, string name)
+        {
 			args.Write(parser.Inner);
 		}
 	}
-	
 }

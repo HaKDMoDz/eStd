@@ -1,8 +1,6 @@
 using System;
-using Eto.Parse;
-using System.Collections.Generic;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class StartParser : Parser
 	{

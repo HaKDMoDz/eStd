@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Creek.IO
+namespace System.IO
 {
     /// <summary>
     /// Interface definition for the <c>ICacheable</c> items.

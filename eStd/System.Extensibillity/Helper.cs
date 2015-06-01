@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace Creek.Extensibility.Plugins
+namespace System.Extensibillity
 {
     /// <summary>
     /// This class contains general purpose methods to be used by PlugIn system.

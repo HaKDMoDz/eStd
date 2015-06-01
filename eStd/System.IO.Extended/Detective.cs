@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Creek.IO
+namespace System.IO
 {
     /// <summary>
     /// Helper class to identify file type by the file header, not file extension.
@@ -345,8 +345,4 @@ namespace Creek.IO
         }
         #endregion
     }
-
-
-
-
 }

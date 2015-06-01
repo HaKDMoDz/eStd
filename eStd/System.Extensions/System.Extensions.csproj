@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayExtension.cs" />
+    <Compile Include="BinaryExtensions.cs" />
     <Compile Include="BooleanExtensions.cs" />
     <Compile Include="ButtonExtension.cs" />
     <Compile Include="ByteArrayExtensions.cs" />

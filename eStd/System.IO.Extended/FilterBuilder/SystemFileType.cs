@@ -8,7 +8,7 @@ using Microsoft.Win32;
 //--------------- SystemFileType ---------------'
 //----------------------------------------------'
 
-namespace Creek.IO.FilterBuilder
+namespace System.IO.FilterBuilder
 {
     /// <summary>
     /// A class providing methods for dealing with system files.

@@ -1,18 +1,10 @@
-﻿// <copyright file="CollectionExtensions.cs" company="Edge Extensions Project">
-// Copyright (c) 2009 All Rights Reserved
-// </copyright>
-// <author>Kevin Nessland</author>
-// <email>kevinnessland@gmail.com</email>
-// <date>2009-07-08</date>
-// <summary>Contains collection-related extensions.</summary>
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains collection-related extensions.

@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class Extensions
     {

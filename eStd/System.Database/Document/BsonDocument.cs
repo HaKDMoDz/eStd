@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Text.RegularExpressions;
 
 namespace LiteDB
 {
@@ -13,15 +9,14 @@ namespace LiteDB
     {
         public const int MAX_DOCUMENT_SIZE = 256 * BasePage.PAGE_AVAILABLE_BYTES; // limits in 1.044.224b max document size to avoid large documents, memory usage and slow performance
 
-        public BsonDocument()
-            : base(new Dictionary<string, BsonValue>())
+        public BsonDocument() : base(new Dictionary<string, BsonValue>())
         {
         }
 
-        public BsonDocument(Dictionary<string, BsonValue> dict)
-            : base(dict)
+        public BsonDocument(Dictionary<string, BsonValue> dict) : base(dict)
         {
-            if (dict == null) throw new ArgumentNullException("dict");
+            if (dict == null)
+                throw new ArgumentNullException("dict");
         }
 
         public new Dictionary<string, BsonValue> RawValue
@@ -43,7 +38,8 @@ namespace LiteDB
             }
             set
             {
-                if (!IsValidFieldName(name)) throw new ArgumentException(string.Format("Field '{0}' has an invalid name.", name));
+                if (!IsValidFieldName(name))
+                    throw new ArgumentException(string.Format("Field '{0}' has an invalid name.", name));
 
                 this.RawValue[name] = value ?? BsonValue.Null;
             }
@@ -69,13 +65,14 @@ namespace LiteDB
             { 
                 var keys = this.RawValue.Keys;
 
-                if (keys.Contains("_id")) yield return "_id";
+                if (keys.Contains("_id"))
+                    yield return "_id";
 
                 foreach (var key in keys.Where(x => x != "_id"))
                 {
                     yield return key;
                 }
-            } 
+            }
         }
 
         /// <summary>
@@ -110,14 +107,15 @@ namespace LiteDB
         /// </summary>
         internal static bool IsValidFieldName(string field)
         {
-            if (string.IsNullOrEmpty(field)) return false;
+            if (string.IsNullOrEmpty(field))
+                return false;
 
             // do not use regex because is too slow
             for (var i = 0; i < field.Length; i++)
             {
                 var c = field[i];
 
-                if(char.IsLetterOrDigit(c) || c == '_')
+                if (char.IsLetterOrDigit(c) || c == '_')
                 {
                     continue;
                 }
@@ -219,7 +217,8 @@ namespace LiteDB
         public override int CompareTo(BsonValue other)
         {
             // if types are diferent, returns sort type order
-            if (other.Type != BsonType.Document) return this.Type.CompareTo(other.Type);
+            if (other.Type != BsonType.Document)
+                return this.Type.CompareTo(other.Type);
 
             var thisKeys = this.Keys.ToArray();
             var thisLength = thisKeys.Length;
@@ -236,10 +235,12 @@ namespace LiteDB
                 result = this[thisKeys[i]].CompareTo(otherDoc[thisKeys[i]]);
 
             // are diferents
-            if (result != 0) return result;
+            if (result != 0)
+                return result;
 
             // test keys length to check wich is bigger
-            if (i == thisLength) return i == otherLength ? 0 : -1;
+            if (i == thisLength)
+                return i == otherLength ? 0 : -1;
             return 1;
         }
 
@@ -247,7 +248,7 @@ namespace LiteDB
         {
             return JsonSerializer.Serialize(this, false, true);
         }
-
+        
         #endregion
     }
 }

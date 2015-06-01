@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Base parser class to define a parsing rule

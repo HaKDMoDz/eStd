@@ -1,4 +1,7 @@
-﻿namespace Creek.Parsers.Multipart {
+﻿using System.Parsers.Multipart;
+
+namespace System.Parsers.Multipart
+{
     /// <summary>
     /// A textual part of a multipart request
     /// </summary>

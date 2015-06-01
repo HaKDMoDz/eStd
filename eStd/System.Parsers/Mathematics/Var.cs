@@ -1,13 +1,13 @@
-﻿using Lib.Parsing.Mathematics;
+﻿using System.Parsers.Mathematics;
 
-namespace Creek.Parsers.Mathematics
+namespace System.Parsers.Mathematics
 {
-    public class Var : Stack
+    public class VariableStack : Stack
     {
         public string Name;
         public object Value;
 
-        public Var(string name, object value)
+        public VariableStack(string name, object value)
         {
             Name = name;
             Value = value;

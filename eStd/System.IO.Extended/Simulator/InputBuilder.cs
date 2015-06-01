@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Creek.IO.Simulator.Native;
+using System.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// A helper class for building a list of <see cref="INPUT"/> messages ready to be sent to the native Windows API.

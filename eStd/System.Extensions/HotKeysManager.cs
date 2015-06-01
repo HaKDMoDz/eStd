@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public class HotKeysManager : NativeWindow
     {

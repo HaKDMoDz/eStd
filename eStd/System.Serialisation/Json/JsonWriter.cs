@@ -29,6 +29,7 @@ using System.IO;
 #if !(NET20 || NET35 || PORTABLE40 || PORTABLE)
 using System.Numerics;
 #endif
+using System.Serialisation.Json;
 using Newtonsoft.Json.Utilities;
 using System.Globalization;
 #if NET20

@@ -1,30 +1,7 @@
-﻿#region License
-// Copyright (c) 2007 James Newton-King
-//
-// Permission is hereby granted, free of charge, to any person
-// obtaining a copy of this software and associated documentation
-// files (the "Software"), to deal in the Software without
-// restriction, including without limitation the rights to use,
-// copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following
-// conditions:
-//
-// The above copyright notice and this permission notice shall be
-// included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-// OTHER DEALINGS IN THE SOFTWARE.
-#endregion
-
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Serialisation.Json.Schema;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -33,9 +10,8 @@ using System.Linq;
 #endif
 using System.Globalization;
 using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
 
-namespace Newtonsoft.Json.Schema
+namespace System.Serialisation.Json.Schema
 {
     [Obsolete("JSON Schema validation has been moved to its own package. See http://www.newtonsoft.com/jsonschema for more details.")]
     internal class JsonSchemaBuilder
@@ -44,7 +20,7 @@ namespace Newtonsoft.Json.Schema
         private readonly JsonSchemaResolver _resolver;
         private readonly IDictionary<string, JsonSchema> _documentSchemas;
         private JsonSchema _currentSchema;
-        private JObject _rootSchema;
+        private System.Serialisation.Json.Linq.JObject _rootSchema;
 
         public JsonSchemaBuilder(JsonSchemaResolver resolver)
         {
@@ -72,14 +48,17 @@ namespace Newtonsoft.Json.Schema
 
         private JsonSchema CurrentSchema
         {
-            get { return _currentSchema; }
+            get
+            {
+                return _currentSchema;
+            }
         }
 
         internal JsonSchema Read(JsonReader reader)
         {
-            JToken schemaToken = JToken.ReadFrom(reader);
+            System.Serialisation.Json.Linq.JToken schemaToken = System.Serialisation.Json.Linq.JToken.ReadFrom(reader);
 
-            _rootSchema = schemaToken as JObject;
+            _rootSchema = schemaToken as System.Serialisation.Json.Linq.JObject;
 
             JsonSchema schema = BuildSchema(schemaToken);
 
@@ -110,16 +89,16 @@ namespace Newtonsoft.Json.Schema
                     if (locationReference)
                     {
                         string[] escapedParts = schema.DeferredReference.TrimStart('#').Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
-                        JToken currentToken = _rootSchema;
+                        System.Serialisation.Json.Linq.JToken currentToken = _rootSchema;
                         foreach (string escapedPart in escapedParts)
                         {
                             string part = UnescapeReference(escapedPart);
 
-                            if (currentToken.Type == JTokenType.Object)
+                            if (currentToken.Type == System.Serialisation.Json.Linq.JTokenType.Object)
                             {
                                 currentToken = currentToken[part];
                             }
-                            else if (currentToken.Type == JTokenType.Array || currentToken.Type == JTokenType.Constructor)
+                            else if (currentToken.Type == System.Serialisation.Json.Linq.JTokenType.Array || currentToken.Type == System.Serialisation.Json.Linq.JTokenType.Constructor)
                             {
                                 int index;
                                 if (int.TryParse(part, out index) && index >= 0 && index < currentToken.Count())
@@ -189,13 +168,13 @@ namespace Newtonsoft.Json.Schema
             return schema;
         }
 
-        private JsonSchema BuildSchema(JToken token)
+        private JsonSchema BuildSchema(System.Serialisation.Json.Linq.JToken token)
         {
-            JObject schemaObject = token as JObject;
+            System.Serialisation.Json.Linq.JObject schemaObject = token as System.Serialisation.Json.Linq.JObject;
             if (schemaObject == null)
                 throw JsonException.Create(token, token.Path, "Expected object while parsing schema object, got {0}.".FormatWith(CultureInfo.InvariantCulture, token.Type));
 
-            JToken referenceToken;
+            System.Serialisation.Json.Linq.JToken referenceToken;
             if (schemaObject.TryGetValue(JsonTypeReflector.RefPropertyName, out referenceToken))
             {
                 JsonSchema deferredSchema = new JsonSchema();
@@ -220,9 +199,9 @@ namespace Newtonsoft.Json.Schema
             return Pop();
         }
 
-        private void ProcessSchemaProperties(JObject schemaObject)
+        private void ProcessSchemaProperties(System.Serialisation.Json.Linq.JObject schemaObject)
         {
-            foreach (KeyValuePair<string, JToken> property in schemaObject)
+            foreach (KeyValuePair<string, System.Serialisation.Json.Linq.JToken> property in schemaObject)
             {
                 switch (property.Key)
                 {
@@ -317,13 +296,13 @@ namespace Newtonsoft.Json.Schema
             }
         }
 
-        private void ProcessExtends(JToken token)
+        private void ProcessExtends(System.Serialisation.Json.Linq.JToken token)
         {
             IList<JsonSchema> schemas = new List<JsonSchema>();
 
-            if (token.Type == JTokenType.Array)
+            if (token.Type == System.Serialisation.Json.Linq.JTokenType.Array)
             {
-                foreach (JToken schemaObject in token)
+                foreach (System.Serialisation.Json.Linq.JToken schemaObject in token)
                 {
                     schemas.Add(BuildSchema(schemaObject));
                 }
@@ -339,43 +318,43 @@ namespace Newtonsoft.Json.Schema
                 CurrentSchema.Extends = schemas;
         }
 
-        private void ProcessEnum(JToken token)
+        private void ProcessEnum(System.Serialisation.Json.Linq.JToken token)
         {
-            if (token.Type != JTokenType.Array)
+            if (token.Type != System.Serialisation.Json.Linq.JTokenType.Array)
                 throw JsonException.Create(token, token.Path, "Expected Array token while parsing enum values, got {0}.".FormatWith(CultureInfo.InvariantCulture, token.Type));
 
-            CurrentSchema.Enum = new List<JToken>();
+            CurrentSchema.Enum = new List<System.Serialisation.Json.Linq.JToken>();
 
-            foreach (JToken enumValue in token)
+            foreach (System.Serialisation.Json.Linq.JToken enumValue in token)
             {
                 CurrentSchema.Enum.Add(enumValue.DeepClone());
             }
         }
 
-        private void ProcessAdditionalProperties(JToken token)
+        private void ProcessAdditionalProperties(System.Serialisation.Json.Linq.JToken token)
         {
-            if (token.Type == JTokenType.Boolean)
+            if (token.Type == System.Serialisation.Json.Linq.JTokenType.Boolean)
                 CurrentSchema.AllowAdditionalProperties = (bool)token;
             else
                 CurrentSchema.AdditionalProperties = BuildSchema(token);
         }
 
-        private void ProcessAdditionalItems(JToken token)
+        private void ProcessAdditionalItems(System.Serialisation.Json.Linq.JToken token)
         {
-            if (token.Type == JTokenType.Boolean)
+            if (token.Type == System.Serialisation.Json.Linq.JTokenType.Boolean)
                 CurrentSchema.AllowAdditionalItems = (bool)token;
             else
                 CurrentSchema.AdditionalItems = BuildSchema(token);
         }
 
-        private IDictionary<string, JsonSchema> ProcessProperties(JToken token)
+        private IDictionary<string, JsonSchema> ProcessProperties(System.Serialisation.Json.Linq.JToken token)
         {
             IDictionary<string, JsonSchema> properties = new Dictionary<string, JsonSchema>();
 
-            if (token.Type != JTokenType.Object)
+            if (token.Type != System.Serialisation.Json.Linq.JTokenType.Object)
                 throw JsonException.Create(token, token.Path, "Expected Object token while parsing schema properties, got {0}.".FormatWith(CultureInfo.InvariantCulture, token.Type));
 
-            foreach (JProperty propertyToken in token)
+            foreach (System.Serialisation.Json.Linq.JProperty propertyToken in token)
             {
                 if (properties.ContainsKey(propertyToken.Name))
                     throw new JsonException("Property {0} has already been defined in schema.".FormatWith(CultureInfo.InvariantCulture, propertyToken.Name));
@@ -386,19 +365,19 @@ namespace Newtonsoft.Json.Schema
             return properties;
         }
 
-        private void ProcessItems(JToken token)
+        private void ProcessItems(System.Serialisation.Json.Linq.JToken token)
         {
             CurrentSchema.Items = new List<JsonSchema>();
 
             switch (token.Type)
             {
-                case JTokenType.Object:
+                case System.Serialisation.Json.Linq.JTokenType.Object:
                     CurrentSchema.Items.Add(BuildSchema(token));
                     CurrentSchema.PositionalItemsValidation = false;
                     break;
-                case JTokenType.Array:
+                case System.Serialisation.Json.Linq.JTokenType.Array:
                     CurrentSchema.PositionalItemsValidation = true;
-                    foreach (JToken schemaToken in token)
+                    foreach (System.Serialisation.Json.Linq.JToken schemaToken in token)
                     {
                         CurrentSchema.Items.Add(BuildSchema(schemaToken));
                     }
@@ -408,24 +387,24 @@ namespace Newtonsoft.Json.Schema
             }
         }
 
-        private JsonSchemaType? ProcessType(JToken token)
+        private JsonSchemaType? ProcessType(System.Serialisation.Json.Linq.JToken token)
         {
             switch (token.Type)
             {
-                case JTokenType.Array:
+                case System.Serialisation.Json.Linq.JTokenType.Array:
                     // ensure type is in blank state before ORing values
                     JsonSchemaType? type = JsonSchemaType.None;
 
-                    foreach (JToken typeToken in token)
+                    foreach (System.Serialisation.Json.Linq.JToken typeToken in token)
                     {
-                        if (typeToken.Type != JTokenType.String)
+                        if (typeToken.Type != System.Serialisation.Json.Linq.JTokenType.String)
                             throw JsonException.Create(typeToken, typeToken.Path, "Exception JSON schema type string token, got {0}.".FormatWith(CultureInfo.InvariantCulture, token.Type));
 
                         type = type | MapType((string)typeToken);
                     }
 
                     return type;
-                case JTokenType.String:
+                case System.Serialisation.Json.Linq.JTokenType.String:
                     return MapType((string)token);
                 default:
                     throw JsonException.Create(token, token.Path, "Expected array or JSON schema type string token, got {0}.".FormatWith(CultureInfo.InvariantCulture, token.Type));

@@ -137,7 +137,8 @@ namespace Hik.Communication.Scs.Communication.Protocols.BinarySerialization
         {
             using (var memoryStream = new MemoryStream())
             {
-                new BinaryFormatter().Serialize(memoryStream, message);
+                new System.Serialisation.SharpSerializer(true).Serialize(message, memoryStream);
+                
                 return memoryStream.ToArray();
             }
         }
@@ -159,16 +160,8 @@ namespace Hik.Communication.Scs.Communication.Protocols.BinarySerialization
             {
                 //Go to head of the stream
                 deserializeMemoryStream.Position = 0;
-                
-                //Deserialize the message
-                var binaryFormatter = new BinaryFormatter
-                {
-                    AssemblyFormat = System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple,
-                    Binder = new DeserializationAppDomainBinder()
-                };
-                
-                //Return the deserialized message
-                return (IScsMessage) binaryFormatter.Deserialize(deserializeMemoryStream);
+
+                return (IScsMessage) new System.Serialisation.SharpSerializer(true).Deserialize(deserializeMemoryStream);
             }
         }
 

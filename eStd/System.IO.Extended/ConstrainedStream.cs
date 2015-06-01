@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
-namespace Creek.IO
+namespace System.IO
 {
     public class ConstrainedStream : Stream
     {

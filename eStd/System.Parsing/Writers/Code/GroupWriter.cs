@@ -1,12 +1,12 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class GroupWriter : ParserWriter<GroupParser>
 	{
-		public override void WriteContents(TextParserWriterArgs args, GroupParser parser, string name)
-		{
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, GroupParser parser, string name)
+        {
 			base.WriteContents(args, parser, name);
 			if (parser.Start != null)
 				args.Output.WriteLine("{0}.Start = {1};", name, args.Write(parser.Start));
@@ -17,4 +17,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public class Tools
     {

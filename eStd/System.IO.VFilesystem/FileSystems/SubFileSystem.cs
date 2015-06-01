@@ -1,27 +1,28 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.IO.VFilesystem.Collections;
 using System.Linq;
-using SharpFileSystem.Collections;
 
-namespace SharpFileSystem.FileSystems
+namespace System.IO.VFilesystem.FileSystems
 {
-    public class SubFileSystem: IFileSystem
+    public class SubFileSystem : SharpFileSystem.IFileSystem
     {
-        public IFileSystem FileSystem { get; private set; }
-        public FileSystemPath Root { get; private set; }
+        public SharpFileSystem.IFileSystem FileSystem { get; private set; }
 
-        public SubFileSystem(IFileSystem fileSystem, FileSystemPath root)
+        public SharpFileSystem.FileSystemPath Root { get; private set; }
+
+        public SubFileSystem(SharpFileSystem.IFileSystem fileSystem, SharpFileSystem.FileSystemPath root)
         {
             FileSystem = fileSystem;
             Root = root;
         }
 
-        protected FileSystemPath AppendRoot(FileSystemPath path)
+        protected SharpFileSystem.FileSystemPath AppendRoot(SharpFileSystem.FileSystemPath path)
         {
             return Root.AppendPath(path);
         }
 
-        protected FileSystemPath RemoveRoot(FileSystemPath path)
+        protected SharpFileSystem.FileSystemPath RemoveRoot(SharpFileSystem.FileSystemPath path)
         {
             return path.RemoveParent(Root);
         }
@@ -31,33 +32,33 @@ namespace SharpFileSystem.FileSystems
             FileSystem.Dispose();
         }
 
-        public ICollection<FileSystemPath> GetEntities(FileSystemPath path)
+        public ICollection<SharpFileSystem.FileSystemPath> GetEntities(SharpFileSystem.FileSystemPath path)
         {
             var paths = FileSystem.GetEntities(AppendRoot(path));
-            return new EnumerableCollection<FileSystemPath>(paths.Select(p => RemoveRoot(p)), paths.Count);
+            return new EnumerableCollection<SharpFileSystem.FileSystemPath>(paths.Select(p => RemoveRoot(p)), paths.Count);
         }
 
-        public bool Exists(FileSystemPath path)
+        public bool Exists(SharpFileSystem.FileSystemPath path)
         {
             return FileSystem.Exists(AppendRoot(path));
         }
 
-        public Stream CreateFile(FileSystemPath path)
+        public Stream CreateFile(SharpFileSystem.FileSystemPath path)
         {
             return FileSystem.CreateFile(AppendRoot(path));
         }
 
-        public Stream OpenFile(FileSystemPath path, FileAccess access)
+        public Stream OpenFile(SharpFileSystem.FileSystemPath path, FileAccess access)
         {
             return FileSystem.OpenFile(AppendRoot(path), access);
         }
 
-        public void CreateDirectory(FileSystemPath path)
+        public void CreateDirectory(SharpFileSystem.FileSystemPath path)
         {
             FileSystem.CreateDirectory(AppendRoot(path));
         }
 
-        public void Delete(FileSystemPath path)
+        public void Delete(SharpFileSystem.FileSystemPath path)
         {
             FileSystem.Delete(AppendRoot(path));
         }

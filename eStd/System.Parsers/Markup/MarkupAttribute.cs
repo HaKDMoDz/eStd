@@ -1,4 +1,4 @@
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     /// <summary>
     /// This class represents an attribute item from a markup tag.

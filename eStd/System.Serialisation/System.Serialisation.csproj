@@ -86,16 +86,8 @@
     <Compile Include="Core\Xml\Elements.cs" />
     <Compile Include="Deserializing\ObjectFactory.cs" />
     <Compile Include="ExcludeFromSerializationAttribute.cs" />
-    <Compile Include="Json\Bson\BsonBinaryType.cs" />
-    <Compile Include="Json\Bson\BsonBinaryWriter.cs" />
-    <Compile Include="Json\Bson\BsonObjectId.cs" />
-    <Compile Include="Json\Bson\BsonReader.cs" />
-    <Compile Include="Json\Bson\BsonToken.cs" />
-    <Compile Include="Json\Bson\BsonType.cs" />
-    <Compile Include="Json\Bson\BsonWriter.cs" />
     <Compile Include="Json\ConstructorHandling.cs" />
     <Compile Include="Json\Converters\BinaryConverter.cs" />
-    <Compile Include="Json\Converters\BsonObjectIdConverter.cs" />
     <Compile Include="Json\Converters\CustomCreationConverter.cs" />
     <Compile Include="Json\Converters\DataSetConverter.cs" />
     <Compile Include="Json\Converters\DataTableConverter.cs" />

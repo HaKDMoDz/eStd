@@ -1,19 +1,11 @@
-﻿// <copyright file="ByteArrayExtensions.cs" company="Edge Extensions Project">
-// Copyright (c) 2009 All Rights Reserved
-// </copyright>
-// <author>Kevin Nessland</author>
-// <email>kevinnessland@gmail.com</email>
-// <date>2009-07-08</date>
-// <summary>Contains byte array extension methods.</summary>
-
-using System;
+﻿using System;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains various byte array related extensions.

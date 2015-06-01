@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for IComponent data type.

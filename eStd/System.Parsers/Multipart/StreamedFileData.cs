@@ -1,4 +1,7 @@
-﻿namespace Creek.Parsers.Multipart {
+﻿using System.Parsers.Multipart;
+
+namespace System.Parsers.Multipart
+{
     /// <summary>
     /// Represents a streamed file in a multipart request.
     /// Contains methods to access the streamed file's data,

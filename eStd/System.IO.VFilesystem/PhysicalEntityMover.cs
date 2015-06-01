@@ -1,4 +1,4 @@
-﻿using SharpFileSystem.FileSystems;
+﻿using System.IO.VFilesystem.FileSystems;
 
 namespace SharpFileSystem
 {

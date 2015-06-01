@@ -1,42 +1,13 @@
-#region Copyright © 2010 Pawel Idzikowski [idzikowski@sharpserializer.com]
-
-//  ***********************************************************************
-//  Project: sharpSerializer
-//  Web: http://www.sharpserializer.com
-//  
-//  This software is provided 'as-is', without any express or implied warranty.
-//  In no event will the author(s) be held liable for any damages arising from
-//  the use of this software.
-//  
-//  Permission is granted to anyone to use this software for any purpose,
-//  including commercial applications, and to alter it and redistribute it
-//  freely, subject to the following restrictions:
-//  
-//      1. The origin of this software must not be misrepresented; you must not
-//        claim that you wrote the original software. If you use this software
-//        in a product, an acknowledgment in the product documentation would be
-//        appreciated but is not required.
-//  
-//      2. Altered source versions must be plainly marked as such, and must not
-//        be misrepresented as being the original software.
-//  
-//      3. This notice may not be removed or altered from any source distribution.
-//  
-//  ***********************************************************************
-
-#endregion
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using Polenter.Serialization.Advanced.Serializing;
-using Polenter.Serialization.Advanced.Xml;
-using Polenter.Serialization.Core;
-using Polenter.Serialization.Core.Xml;
-using Polenter.Serialization.Serializing;
+using System.Serialisation.Advanced.Serializing;
+using System.Serialisation.Advanced.Xml;
+using System.Serialisation.Core;
+using System.Serialisation.Core.Xml;
 
-namespace Polenter.Serialization.Advanced
+namespace System.Serialisation.Advanced
 {
     /// <summary>
     ///   Serializes properties to xml or any other target which supports node/attribute notation
@@ -53,14 +24,15 @@ namespace Polenter.Serialization.Advanced
         ///<param name = "writer"></param>
         public XmlPropertySerializer(IXmlWriter writer)
         {
-            if (writer == null) throw new ArgumentNullException("writer");
+            if (writer == null)
+                throw new ArgumentNullException("writer");
             _writer = writer;
         }
 
         /// <summary>
         /// </summary>
         /// <param name = "property"></param>
-        protected override void SerializeNullProperty(PropertyTypeInfo<NullProperty> property)
+        protected override void SerializeNullProperty(System.Serialisation.Serializing.PropertyTypeInfo<NullProperty> property)
         {
             // nulls must be serialized also 
             writeStartProperty(Elements.Null, property.Name, property.ValueType);
@@ -70,9 +42,10 @@ namespace Polenter.Serialization.Advanced
         /// <summary>
         /// </summary>
         /// <param name = "property"></param>
-        protected override void SerializeSimpleProperty(PropertyTypeInfo<SimpleProperty> property)
+        protected override void SerializeSimpleProperty(System.Serialisation.Serializing.PropertyTypeInfo<SimpleProperty> property)
         {
-            if (property.Property.Value == null) return;
+            if (property.Property.Value == null)
+                return;
 
             writeStartProperty(Elements.SimpleObject, property.Name, property.ValueType);
 
@@ -107,7 +80,7 @@ namespace Polenter.Serialization.Advanced
         /// </summary>
         /// <param name = "property"></param>
         protected override void SerializeMultiDimensionalArrayProperty(
-            PropertyTypeInfo<MultiDimensionalArrayProperty> property)
+            System.Serialisation.Serializing.PropertyTypeInfo<MultiDimensionalArrayProperty> property)
         {
             writeStartProperty(Elements.MultiArray, property.Name, property.ValueType);
 
@@ -144,11 +117,10 @@ namespace Polenter.Serialization.Advanced
             _writer.WriteAttribute(Attributes.Indexes, item.Indexes);
 
             // Write Data
-            SerializeCore(new PropertyTypeInfo<Property>(item.Value, defaultTypeOfItemValue));
+            SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(item.Value, defaultTypeOfItemValue));
 
             _writer.WriteEndElement();
         }
-
 
         private void writeDimensionInfos(IEnumerable<DimensionInfo> infos)
         {
@@ -164,7 +136,7 @@ namespace Polenter.Serialization.Advanced
         /// </summary>
         /// <param name = "property"></param>
         protected override void SerializeSingleDimensionalArrayProperty(
-            PropertyTypeInfo<SingleDimensionalArrayProperty> property)
+            System.Serialisation.Serializing.PropertyTypeInfo<SingleDimensionalArrayProperty> property)
         {
             writeStartProperty(Elements.SingleArray, property.Name, property.ValueType);
 
@@ -204,7 +176,7 @@ namespace Polenter.Serialization.Advanced
         /// <summary>
         /// </summary>
         /// <param name = "property"></param>
-        protected override void SerializeDictionaryProperty(PropertyTypeInfo<DictionaryProperty> property)
+        protected override void SerializeDictionaryProperty(System.Serialisation.Serializing.PropertyTypeInfo<DictionaryProperty> property)
         {
             writeStartProperty(Elements.Dictionary, property.Name, property.ValueType);
 
@@ -236,8 +208,8 @@ namespace Polenter.Serialization.Advanced
         private void writeDictionaryItem(KeyValueItem item, Type defaultKeyType, Type defaultValueType)
         {
             _writer.WriteStartElement(SubElements.Item);
-            SerializeCore(new PropertyTypeInfo<Property>(item.Key, defaultKeyType));
-            SerializeCore(new PropertyTypeInfo<Property>(item.Value, defaultValueType));
+            SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(item.Key, defaultKeyType));
+            SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(item.Value, defaultValueType));
             _writer.WriteEndElement();
         }
 
@@ -260,7 +232,7 @@ namespace Polenter.Serialization.Advanced
         /// <summary>
         /// </summary>
         /// <param name = "property"></param>
-        protected override void SerializeCollectionProperty(PropertyTypeInfo<CollectionProperty> property)
+        protected override void SerializeCollectionProperty(System.Serialisation.Serializing.PropertyTypeInfo<CollectionProperty> property)
         {
             writeStartProperty(Elements.Collection, property.Name, property.ValueType);
 
@@ -284,7 +256,7 @@ namespace Polenter.Serialization.Advanced
             _writer.WriteStartElement(SubElements.Items);
             foreach (Property item in properties)
             {
-                SerializeCore(new PropertyTypeInfo<Property>(item, defaultItemType));
+                SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(item, defaultItemType));
             }
             _writer.WriteEndElement();
         }
@@ -297,7 +269,8 @@ namespace Polenter.Serialization.Advanced
         private void writeProperties(ICollection<Property> properties, Type ownerType)
         {
             // check if there are properties
-            if (properties.Count == 0) return;
+            if (properties.Count == 0)
+                return;
 
             _writer.WriteStartElement(SubElements.Properties);
             foreach (Property property in properties)
@@ -305,11 +278,11 @@ namespace Polenter.Serialization.Advanced
                 PropertyInfo propertyInfo = ownerType.GetProperty(property.Name);
                 if (propertyInfo != null)
                 {
-                    SerializeCore(new PropertyTypeInfo<Property>(property, propertyInfo.PropertyType));
+                    SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(property, propertyInfo.PropertyType));
                 }
                 else
                 {
-                    SerializeCore(new PropertyTypeInfo<Property>(property, null));
+                    SerializeCore(new System.Serialisation.Serializing.PropertyTypeInfo<Property>(property, null));
                 }
             }
             _writer.WriteEndElement();
@@ -318,7 +291,7 @@ namespace Polenter.Serialization.Advanced
         /// <summary>
         /// </summary>
         /// <param name = "property"></param>
-        protected override void SerializeComplexProperty(PropertyTypeInfo<ComplexProperty> property)
+        protected override void SerializeComplexProperty(System.Serialisation.Serializing.PropertyTypeInfo<ComplexProperty> property)
         {
             writeStartProperty(Elements.ComplexObject, property.Name, property.ValueType);
 

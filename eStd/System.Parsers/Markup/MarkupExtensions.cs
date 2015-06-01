@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Linq;
 
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     public static class MarkupExtensions
     {

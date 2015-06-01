@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Creek.IO.Internal
+namespace System.IO.Internal
 {
     internal class Functions
     {

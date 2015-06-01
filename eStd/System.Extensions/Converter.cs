@@ -1,4 +1,4 @@
-﻿namespace Creek.Extensions
+﻿namespace System.Extensions
 {
 	/// <summary>
 	/// 	An internal implementation of the IConverter&lt;T&gt; interface

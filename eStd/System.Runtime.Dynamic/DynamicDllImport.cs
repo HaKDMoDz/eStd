@@ -1,4 +1,4 @@
-﻿namespace Creek.Dynamics
+﻿namespace System.Runtime.Dynamic
 {
     using System;
     using System.Collections.Generic;
@@ -6,6 +6,7 @@
     using System.Reflection;
     using System.Linq.Expressions;
     using System.Reflection.Emit;
+    using System.Runtime.Dynamic;
     using System.Threading;
 
     public class DynamicDllImportMetaObject : DynamicMetaObject

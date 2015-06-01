@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 
-namespace Creek.IO
+namespace System.IO
 {
     public class QRCodeGenerator
     {

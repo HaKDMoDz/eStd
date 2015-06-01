@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Document
 {
     public class BsonArray : BsonValue, IEnumerable<BsonValue>
     {

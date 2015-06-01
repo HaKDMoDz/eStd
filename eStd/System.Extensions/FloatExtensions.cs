@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for the Float data type

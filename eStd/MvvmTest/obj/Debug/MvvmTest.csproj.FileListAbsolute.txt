@@ -1,0 +1,15 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\MvvmTest.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest_MarkupCompile.cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.g.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.Properties.Resources.resources
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.csproj.GenerateResource.Cache
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\MvvmTest.dll.config
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\MvvmTest.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\MvvmTest.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\SampleControl.baml
+C:\Users\Chris\Documents\GitHub\eStd\eStd\MvvmTest\obj\Debug\SampleControl.g.cs
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\Samples\MvvmTest.dll.config
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\Samples\MvvmTest.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\Samples\MvvmTest.pdb

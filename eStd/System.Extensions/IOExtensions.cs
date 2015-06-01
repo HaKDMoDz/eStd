@@ -5,7 +5,7 @@ using System.Drawing;
 using System.IO;
 using Microsoft.Win32;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Provides various file-related extensions.

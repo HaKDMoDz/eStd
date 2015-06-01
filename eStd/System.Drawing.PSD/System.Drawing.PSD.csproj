@@ -7,8 +7,8 @@
     <ProjectGuid>{DA014A00-3418-4073-BAB0-8CE95365C578}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Drawing.PSD</RootNamespace>
-    <AssemblyName>System.Drawing.PSD</AssemblyName>
+    <RootNamespace>System.Drawing.Psd</RootNamespace>
+    <AssemblyName>System.Drawing.Psd</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

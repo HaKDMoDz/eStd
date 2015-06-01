@@ -25,7 +25,8 @@
 
 using System;
 using System.Collections;
-using Newtonsoft.Json.Schema;
+using System.Serialisation.Json;
+using System.Serialisation.Json.Converters;
 #if !(NET35 || NET20 || PORTABLE || PORTABLE40)
 using System.Collections.Concurrent;
 #endif
@@ -41,9 +42,7 @@ using System.Runtime.Serialization;
 using System.Security.Permissions;
 #endif
 using System.Xml.Serialization;
-using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Linq;
 using System.Runtime.CompilerServices;
 #if NET20
 using Newtonsoft.Json.Utilities.LinqBridge;
@@ -127,7 +126,6 @@ namespace Newtonsoft.Json.Serialization
             new DiscriminatedUnionConverter(),
 #endif
             new KeyValuePairConverter(),
-            new BsonObjectIdConverter(),
             new RegexConverter()
         };
 
@@ -452,7 +450,7 @@ namespace Newtonsoft.Json.Serialization
                     Type keyType = dictionaryType.GetGenericArguments()[0];
                     Type valueType = dictionaryType.GetGenericArguments()[1];
 
-                    if (keyType.IsAssignableFrom(typeof(string)) && valueType.IsAssignableFrom(typeof(JToken)))
+                    if (keyType.IsAssignableFrom(typeof(string)) && valueType.IsAssignableFrom(typeof(System.Serialisation.Json.Linq.JToken)))
                         return true;
                 }
 
@@ -475,7 +473,7 @@ namespace Newtonsoft.Json.Serialization
 
             Type keyType = dictionaryType.GetGenericArguments()[0];
             Type valueType = dictionaryType.GetGenericArguments()[1];
-            bool isJTokenValueType = typeof(JToken).IsAssignableFrom(valueType);
+            bool isJTokenValueType = typeof(System.Serialisation.Json.Linq.JToken).IsAssignableFrom(valueType);
 
             Type createdType;
 
@@ -507,8 +505,8 @@ namespace Newtonsoft.Json.Serialization
 
                 // convert object value to JToken so it is compatible with dictionary
                 // could happen because of primitive types, type name handling and references
-                if (isJTokenValueType && !(value is JToken))
-                    value = (value != null) ? JToken.FromObject(value) : JValue.CreateNull();
+                if (isJTokenValueType && !(value is System.Serialisation.Json.Linq.JToken))
+                    value = (value != null) ? System.Serialisation.Json.Linq.JToken.FromObject(value) : System.Serialisation.Json.Linq.JValue.CreateNull();
 
                 setExtensionDataDictionaryValue(dictionary, key, value);
             };
@@ -1000,7 +998,7 @@ namespace Newtonsoft.Json.Serialization
             if (containerAttribute is JsonDictionaryAttribute)
                 return CreateDictionaryContract(objectType);
 
-            if (t == typeof(JToken) || t.IsSubclassOf(typeof(JToken)))
+            if (t == typeof(System.Serialisation.Json.Linq.JToken) || t.IsSubclassOf(typeof(System.Serialisation.Json.Linq.JToken)))
                 return CreateLinqContract(objectType);
 
             if (CollectionUtils.IsDictionaryType(t))
@@ -1044,7 +1042,7 @@ namespace Newtonsoft.Json.Serialization
             if (typeof(IConvertible).IsAssignableFrom(t)
                 || (ReflectionUtils.IsNullableType(t) && typeof(IConvertible).IsAssignableFrom(Nullable.GetUnderlyingType(t))))
             {
-                return !typeof(JToken).IsAssignableFrom(t);
+                return !typeof(System.Serialisation.Json.Linq.JToken).IsAssignableFrom(t);
             }
 
             return false;

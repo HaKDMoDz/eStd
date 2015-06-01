@@ -1,4 +1,4 @@
-﻿namespace Creek.IO
+﻿namespace System.IO
 {
     using System;
     using System.IO;

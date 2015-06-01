@@ -26,6 +26,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Serialisation.Json;
 using Newtonsoft.Json.Utilities;
 using System.Collections;
 #if NET20

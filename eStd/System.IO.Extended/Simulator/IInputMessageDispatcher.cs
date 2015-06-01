@@ -1,7 +1,7 @@
 ﻿using System;
-using Creek.IO.Simulator.Native;
+using System.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// The contract for a service that dispatches <see cref="INPUT"/> messages to the appropriate destination.

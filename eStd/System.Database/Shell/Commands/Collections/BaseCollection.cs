@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Database.Database;
+using System.Database.Database.Collections;
+using System.Database.Utils;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
+using LiteDB;
 
-namespace LiteDB.Shell.Commands
+namespace System.Database.Shell.Commands.Collections
 {
     internal class BaseCollection
     {
@@ -47,17 +50,17 @@ namespace LiteDB.Shell.Commands
             return new KeyValuePair<int, int>(skip, limit);
         }
 
-        public Query ReadQuery(StringScanner s)
+        public Query.Query ReadQuery(StringScanner s)
         {
             if (s.HasTerminated || s.Match(@"skip\s+\d") || s.Match(@"limit\s+\d"))
             {
-                return Query.All();
+                return Query.Query.All();
             }
 
             return this.ReadInlineQuery(s);
         }
 
-        private Query ReadInlineQuery(StringScanner s)
+        private Query.Query ReadInlineQuery(StringScanner s)
         {
             var left = this.ReadOneQuery(s);
 
@@ -71,11 +74,11 @@ namespace LiteDB.Shell.Commands
             if(oper.Length == 0) throw new ApplicationException("Invalid query operator");
 
             return oper == "and" ?
-                Query.And(left, this.ReadInlineQuery(s)) :
-                Query.Or(left, this.ReadInlineQuery(s));
+                Query.Query.And(left, this.ReadInlineQuery(s)) :
+                Query.Query.Or(left, this.ReadInlineQuery(s));
         }
 
-        private Query ReadOneQuery(StringScanner s)
+        private Query.Query ReadOneQuery(StringScanner s)
         {
             var field = s.Scan(this.FieldPattern).Trim();
             var oper = s.Scan(@"(=|!=|>=|<=|>|<|like|in|between|contains)");
@@ -83,16 +86,16 @@ namespace LiteDB.Shell.Commands
 
             switch (oper)
             {
-                case "=": return Query.EQ(field, value);
-                case "!=": return Query.Not(field, value);
-                case ">": return Query.GT(field, value);
-                case ">=": return Query.GTE(field, value);
-                case "<": return Query.LT(field, value);
-                case "<=": return Query.LTE(field, value);
-                case "like": return Query.StartsWith(field, value);
-                case "in": return Query.In(field, value.AsArray);
-                case "between": return Query.Between(field, value.AsArray[0], value.AsArray[1]);
-                case "contains": return Query.Contains(field, value);
+                case "=": return Query.Query.EQ(field, value);
+                case "!=": return Query.Query.Not(field, value);
+                case ">": return Query.Query.GT(field, value);
+                case ">=": return Query.Query.GTE(field, value);
+                case "<": return Query.Query.LT(field, value);
+                case "<=": return Query.Query.LTE(field, value);
+                case "like": return Query.Query.StartsWith(field, value);
+                case "in": return Query.Query.In(field, value.AsArray);
+                case "between": return Query.Query.Between(field, value.AsArray[0], value.AsArray[1]);
+                case "contains": return Query.Query.Contains(field, value);
                 default: throw new ApplicationException("Invalid query operator");
             }
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class Extension
     {
@@ -129,14 +129,10 @@ namespace Creek.Extensions
             return enc.GetBytes(str);
         }
 
-        public static T To<T>(this object o)
+        public static T Cast<T>(this object o)
         {
             return (T)o;
         }
 
-        public static string toString(this object o)
-        {
-            return o.ToString();
-        }
     }
 }

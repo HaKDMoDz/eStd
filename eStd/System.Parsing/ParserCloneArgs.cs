@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public class ParserCloneArgs
 	{
@@ -28,5 +29,4 @@ namespace Eto.Parse
 		{
 		}
 	}
-	
 }

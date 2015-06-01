@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creek.IO.FilterBuilder
+namespace System.IO.FilterBuilder
 {
     /// <summary>
     /// Represents a filter group.
@@ -51,7 +51,7 @@ namespace Creek.IO.FilterBuilder
         /// <returns>
         /// Boolean as to whether the filter was found in the collection.
         /// </returns>
-        private bool Contains(Creek.IO.FilterBuilder.FilterBuilder.Filters filter)
+        private bool Contains(System.IO.FilterBuilder.FilterBuilder.Filters filter)
         {
 
             //Check the filter and return boolean
@@ -79,7 +79,7 @@ namespace Creek.IO.FilterBuilder
         /// The filter to add.
         /// </param>
 
-        public void Add(Creek.IO.FilterBuilder.FilterBuilder.Filters filter)
+        public void Add(System.IO.FilterBuilder.FilterBuilder.Filters filter)
         {
             //Add filter to the list
             sFilters.Add(Helpers.ReturnFilterAsString(filter));
@@ -93,10 +93,10 @@ namespace Creek.IO.FilterBuilder
         /// The filters to add.
         /// </param>
 
-        public void Add(Creek.IO.FilterBuilder.FilterBuilder.Filters[] filters)
+        public void Add(System.IO.FilterBuilder.FilterBuilder.Filters[] filters)
         {
             //Add filter to the list
-            foreach (Creek.IO.FilterBuilder.FilterBuilder.Filters item in filters)
+            foreach (System.IO.FilterBuilder.FilterBuilder.Filters item in filters)
             {
                 sFilters.Add(Helpers.ReturnFilterAsString(item));
             }
@@ -125,7 +125,7 @@ namespace Creek.IO.FilterBuilder
             string description = "";
             try
             {
-                description = new Creek.IO.FilterBuilder.FilterBuilder().GetSystemFileTypeDescription(extension);
+                description = new System.IO.FilterBuilder.FilterBuilder().GetSystemFileTypeDescription(extension);
             }
             catch (Exception)
             {

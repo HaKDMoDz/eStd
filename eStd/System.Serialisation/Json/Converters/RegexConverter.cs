@@ -1,35 +1,9 @@
-﻿#region License
-// Copyright (c) 2007 James Newton-King
-//
-// Permission is hereby granted, free of charge, to any person
-// obtaining a copy of this software and associated documentation
-// files (the "Software"), to deal in the Software without
-// restriction, including without limitation the rights to use,
-// copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following
-// conditions:
-//
-// The above copyright notice and this permission notice shall be
-// included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-// OTHER DEALINGS IN THE SOFTWARE.
-#endregion
-
-using System;
+﻿using System;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json.Bson;
-using System.Globalization;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Newtonsoft.Json.Converters
+namespace System.Serialisation.Json.Converters
 {
     /// <summary>
     /// Converts a <see cref="Regex"/> to and from JSON and BSON.
@@ -49,44 +23,12 @@ namespace Newtonsoft.Json.Converters
         {
             Regex regex = (Regex)value;
 
-            BsonWriter bsonWriter = writer as BsonWriter;
-            if (bsonWriter != null)
-                WriteBson(bsonWriter, regex);
-            else
-                WriteJson(writer, regex, serializer);
+            WriteJson(writer, regex, serializer);
         }
 
         private bool HasFlag(RegexOptions options, RegexOptions flag)
         {
             return ((options & flag) == flag);
-        }
-
-        private void WriteBson(BsonWriter writer, Regex regex)
-        {
-            // Regular expression - The first cstring is the regex pattern, the second
-            // is the regex options string. Options are identified by characters, which 
-            // must be stored in alphabetical order. Valid options are 'i' for case 
-            // insensitive matching, 'm' for multiline matching, 'x' for verbose mode, 
-            // 'l' to make \w, \W, etc. locale dependent, 's' for dotall mode 
-            // ('.' matches everything), and 'u' to make \w, \W, etc. match unicode.
-
-            string options = null;
-
-            if (HasFlag(regex.Options, RegexOptions.IgnoreCase))
-                options += "i";
-
-            if (HasFlag(regex.Options, RegexOptions.Multiline))
-                options += "m";
-
-            if (HasFlag(regex.Options, RegexOptions.Singleline))
-                options += "s";
-
-            options += "u";
-
-            if (HasFlag(regex.Options, RegexOptions.ExplicitCapture))
-                options += "x";
-
-            writer.WriteRegex(regex.ToString(), options);
         }
 
         private void WriteJson(JsonWriter writer, Regex regex, JsonSerializer serializer)

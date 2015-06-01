@@ -1,6 +1,6 @@
 using System;
 
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     /// <summary>
     /// Class that represents an HTML specific MarkupDocument implementation.

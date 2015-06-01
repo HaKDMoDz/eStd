@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Creek.Plugins.Internal.Tools
+namespace System.Extensibillity
 {
     internal class LinkFinder
     {

@@ -1,11 +1,9 @@
-﻿using LiteDB.Shell;
+﻿using System.Database.Document;
 using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Database.Shell;
 using System.Linq;
-using System.Text;
 
-namespace LiteDB
+namespace System.Database.Database
 {
     public partial class LiteDatabase
     {

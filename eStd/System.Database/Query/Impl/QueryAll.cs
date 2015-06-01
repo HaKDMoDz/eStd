@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Storage.Services;
+using System.Database.Storage.Structures;
 using System.Linq;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Query.Impl
 {
     /// <summary>
     /// All is an Index Scan operation

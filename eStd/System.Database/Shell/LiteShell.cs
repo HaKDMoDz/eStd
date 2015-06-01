@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
+using System.Database.Database;
+using System.Database.Document;
+using System.Database.Utils;
 using System.Linq;
-using System.Text;
+using LiteDB;
+using LiteDB.Shell;
 
-namespace LiteDB.Shell
+namespace System.Database.Shell
 {
     public class LiteShell
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SharpFileSystem.Collections
+namespace System.IO.VFilesystem.Collections
 {
     public class EnumerableCollection<T>: ICollection<T>
     {

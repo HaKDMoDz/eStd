@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Represent a class to implements Paging functionality.

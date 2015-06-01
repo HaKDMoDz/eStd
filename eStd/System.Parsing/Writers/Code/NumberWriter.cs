@@ -1,12 +1,12 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class NumberWriter : ParserWriter<NumberParser>
 	{
-		public override void WriteContents(TextParserWriterArgs args, NumberParser parser, string name)
-		{
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, NumberParser parser, string name)
+        {
 			base.WriteContents(args, parser, name);
 			if (parser.AllowDecimal)
 				args.Output.WriteLine("{0}.AllowDecimal = {1};", name, parser.AllowDecimal.ToString().ToLower());
@@ -21,4 +21,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

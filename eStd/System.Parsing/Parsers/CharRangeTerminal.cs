@@ -1,7 +1,6 @@
 using System;
-using Eto.Parse.Parsers;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class CharRangeTerminal : CharTerminal
 	{

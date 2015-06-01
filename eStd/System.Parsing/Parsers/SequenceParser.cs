@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Parsing;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class SequenceParser : ListParser, ISeparatedParser
 	{

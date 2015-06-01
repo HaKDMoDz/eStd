@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extension methods for the enum data type

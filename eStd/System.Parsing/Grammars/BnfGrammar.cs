@@ -1,13 +1,12 @@
 using System;
-using Eto.Parse.Parsers;
-using Eto.Parse.Scanners;
+using System.Parsing.Parsers;
+using System.Parsing.Writers;
 using System.Collections.Generic;
 using System.Linq;
-using Eto.Parse.Writers;
 using System.IO;
-using System.CodeDom.Compiler;
+using System.Parsing.Scanners;
 
-namespace Eto.Parse.Grammars
+namespace System.Parsing.Grammars
 {
 	/// <summary>
 	/// Grammar to build a parser grammar using Backus-Naur Form
@@ -227,4 +226,3 @@ namespace Eto.Parse.Grammars
 		}
 	}
 }
-

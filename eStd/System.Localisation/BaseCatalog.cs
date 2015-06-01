@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using Creek.I18N.Gettext.Plural;
+using System.Localisation.Plural;
 
-namespace Creek.I18N.Gettext
+namespace System.Localisation
 {
     /// <summary>
     /// Base catalog.

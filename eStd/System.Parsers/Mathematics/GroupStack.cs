@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 
-namespace Lib.Parsing.Mathematics
+namespace System.Parsers.Mathematics
 {
-    public class GroupStack : Stack<List<Stack>>
+    public class GroupStack : System.Parsers.Mathematics.Stack<List<Stack>>
     {
-        public GroupStack(List<Stack> v)
-            : base(v)
+        public GroupStack(List<System.Parsers.Mathematics.Stack> v) : base(v)
         {
         }
     }

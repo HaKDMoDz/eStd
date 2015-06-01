@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SharpFileSystem.Collections
+namespace System.IO.VFilesystem.Collections
 {
     public class InverseComparer<T>: IComparer<T>
     {

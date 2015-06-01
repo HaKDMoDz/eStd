@@ -1,0 +1,6 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.MarkupExtensions\bin\Debug\System.Wpf.MarkupExtensions.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.MarkupExtensions\bin\Debug\System.Wpf.MarkupExtensions.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.MarkupExtensions\obj\Debug\System.Wpf.MarkupExtensions.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.MarkupExtensions\obj\Debug\System.Wpf.MarkupExtensions.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Wpf.MarkupExtensions.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Wpf.MarkupExtensions.pdb

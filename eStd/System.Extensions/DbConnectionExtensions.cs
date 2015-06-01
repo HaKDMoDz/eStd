@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Linq;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extensions for IDbConnection

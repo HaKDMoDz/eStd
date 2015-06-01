@@ -2,37 +2,37 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
-namespace SharpFileSystem.FileSystems
+namespace System.IO.VFilesystem.FileSystems
 {
-    public class MemoryFileSystem : IFileSystem
+    public class MemoryFileSystem : SharpFileSystem.IFileSystem
     {
-        private IDictionary<FileSystemPath, LinkedList<FileSystemPath>> _directories =
-    new Dictionary<FileSystemPath, LinkedList<FileSystemPath>>();
-        private IDictionary<FileSystemPath, MemoryFile> _files =
-            new Dictionary<FileSystemPath, MemoryFile>();
+        private IDictionary<SharpFileSystem.FileSystemPath, LinkedList<SharpFileSystem.FileSystemPath>> _directories =
+            new Dictionary<SharpFileSystem.FileSystemPath, LinkedList<SharpFileSystem.FileSystemPath>>();
+        private IDictionary<SharpFileSystem.FileSystemPath, MemoryFile> _files =
+            new Dictionary<SharpFileSystem.FileSystemPath, MemoryFile>();
+
         public MemoryFileSystem()
         {
-            _directories.Add(FileSystemPath.Root, new LinkedList<FileSystemPath>());
+            _directories.Add(SharpFileSystem.FileSystemPath.Root, new LinkedList<SharpFileSystem.FileSystemPath>());
         }
 
-        public ICollection<FileSystemPath> GetEntities(FileSystemPath path)
+        public ICollection<SharpFileSystem.FileSystemPath> GetEntities(SharpFileSystem.FileSystemPath path)
         {
             if (!path.IsDirectory)
                 throw new ArgumentException("The specified path is no directory.", "path");
-            LinkedList<FileSystemPath> subentities;
+            LinkedList<SharpFileSystem.FileSystemPath> subentities;
             if (!_directories.TryGetValue(path, out subentities))
                 throw new DirectoryNotFoundException();
             return subentities;
         }
 
-        public bool Exists(FileSystemPath path)
+        public bool Exists(SharpFileSystem.FileSystemPath path)
         {
             return path.IsDirectory ? _directories.ContainsKey(path) : _files.ContainsKey(path);
         }
 
-        public Stream CreateFile(FileSystemPath path)
+        public Stream CreateFile(SharpFileSystem.FileSystemPath path)
         {
             if (!path.IsFile)
                 throw new ArgumentException("The specified path is no file.", "path");
@@ -42,7 +42,7 @@ namespace SharpFileSystem.FileSystems
             return new MemoryFileStream(_files[path] = new MemoryFile());
         }
 
-        public Stream OpenFile(FileSystemPath path, FileAccess access)
+        public Stream OpenFile(SharpFileSystem.FileSystemPath path, FileAccess access)
         {
             if (!path.IsFile)
                 throw new ArgumentException("The specified path is no file.", "path");
@@ -52,20 +52,20 @@ namespace SharpFileSystem.FileSystems
             return new MemoryFileStream(file);
         }
 
-        public void CreateDirectory(FileSystemPath path)
+        public void CreateDirectory(SharpFileSystem.FileSystemPath path)
         {
             if (!path.IsDirectory)
                 throw new ArgumentException("The specified path is no directory.", "path");
-            LinkedList<FileSystemPath> subentities;
+            LinkedList<SharpFileSystem.FileSystemPath> subentities;
             if (_directories.ContainsKey(path))
                 throw new ArgumentException("The specified directory-path already exists.", "path");
             if (!_directories.TryGetValue(path.ParentPath, out subentities))
                 throw new DirectoryNotFoundException();
             subentities.AddLast(path);
-            _directories[path] = new LinkedList<FileSystemPath>();
+            _directories[path] = new LinkedList<SharpFileSystem.FileSystemPath>();
         }
 
-        public void Delete(FileSystemPath path)
+        public void Delete(SharpFileSystem.FileSystemPath path)
         {
             if (path.IsRoot)
                 throw new ArgumentException("The root cannot be deleted.");

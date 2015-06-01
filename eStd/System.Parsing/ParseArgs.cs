@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Arguments used for each parse operation

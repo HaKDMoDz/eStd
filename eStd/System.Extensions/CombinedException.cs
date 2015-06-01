@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
 	/// <summary>
 	/// 	Generic exception for combining several other exceptions

@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Query.Impl;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Query.Linq
 {
     /// <summary>
     /// Class helper to create Queries based on Linq expressions

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public class ParserInitializeArgs : ParserChain
 	{
@@ -20,4 +21,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

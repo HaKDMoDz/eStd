@@ -1,5 +1,5 @@
-﻿using System.Text;
-using SharpFileSystem.Collections;
+﻿using System.IO.VFilesystem.Collections;
+using System.Text;
 
 namespace SharpFileSystem
 {

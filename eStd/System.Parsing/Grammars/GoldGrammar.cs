@@ -1,12 +1,13 @@
 using System;
-using System.Linq;
-using Eto.Parse.Parsers;
 using System.IO;
-using System.CodeDom.Compiler;
-using Eto.Parse.Writers;
+using System.Linq;
+using System.Parsing;
+using System.Parsing.Grammars;
+using System.Parsing.Parsers;
+using System.Parsing.Writers;
 using System.Globalization;
 
-namespace Eto.Parse.Grammars
+namespace System.Parsing.Grammars
 {
 	/// <summary>
 	/// Grammar to build a parser grammar using Gold Meta-Language
@@ -381,4 +382,3 @@ namespace Eto.Parse.Grammars
 		}
 	}
 }
-

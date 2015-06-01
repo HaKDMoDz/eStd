@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Serialisation.Json.Linq.JsonPath;
 
-namespace Newtonsoft.Json.Linq.JsonPath
+namespace System.Serialisation.Json.Linq.JsonPath
 {
     internal enum QueryOperator
     {

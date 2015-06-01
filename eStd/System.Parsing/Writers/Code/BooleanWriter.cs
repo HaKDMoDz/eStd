@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
-using Eto.Parse.Parsers;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class BooleanWriter : ParserWriter<BooleanTerminal>
 	{
-		public override void WriteContents(TextParserWriterArgs args, BooleanTerminal parser, string name)
-		{
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, BooleanTerminal parser, string name)
+        {
 			base.WriteContents(args, parser, name);
 			if (parser.CaseSensitive != null)
 				args.Output.WriteLine("{0}.CaseSensitive = {1};", name, parser.CaseSensitive.HasValue ? parser.CaseSensitive.ToString().ToLowerInvariant() : "null");
@@ -21,4 +21,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

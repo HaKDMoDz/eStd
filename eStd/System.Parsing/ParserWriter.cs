@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public interface IParserWriter
 	{
@@ -58,4 +59,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

@@ -5,7 +5,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extracts the shell thumbnail from a file.

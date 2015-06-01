@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Storage.Structures;
 using System.Linq;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Storage.Structures
 {
     /// <summary>
     /// Represent a index node inside a Index Page
@@ -62,7 +63,7 @@ namespace LiteDB
         /// </summary>
         public PageAddress NextPrev(int index, int order)
         {
-            return order == Query.Ascending ? this.Next[index] : this.Prev[index];
+            return order == Query.Query.Ascending ? this.Next[index] : this.Prev[index];
         }
 
         /// <summary>

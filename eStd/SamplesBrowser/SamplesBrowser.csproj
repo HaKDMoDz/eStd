@@ -53,6 +53,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DownloadDialog.xaml.cs">
+      <DependentUpon>DownloadDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sample.cs" />
+    <Compile Include="ViewModel\DownloadDialogViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Page Include="DownloadDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +103,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Wpf.MarkupExtensions\System.Wpf.MarkupExtensions.csproj">
+      <Project>{703f1c01-50d4-4ce8-9174-eba78237d9c5}</Project>
+      <Name>System.Wpf.MarkupExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Wpf.Mvvm\System.Wpf.Mvvm.csproj">
+      <Project>{807d9363-eef4-4d3c-9f56-66cc210680d9}</Project>
+      <Name>System.Wpf.Mvvm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

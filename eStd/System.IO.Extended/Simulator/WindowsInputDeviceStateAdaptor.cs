@@ -1,7 +1,7 @@
 ﻿using System;
-using Creek.IO.Simulator.Native;
+using System.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// An implementation of <see cref="IInputDeviceStateAdaptor"/> for Windows by calling the native <see cref="NativeMethods.GetKeyState"/> and <see cref="NativeMethods.GetAsyncKeyState"/> methods.

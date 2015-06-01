@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Creek.IO
+namespace System.IO
 {
     public class TempFile : IDisposable
     {

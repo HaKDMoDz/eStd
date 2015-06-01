@@ -1,15 +1,7 @@
-﻿// <copyright file="NativeMethods.cs" company="Edge Extensions Project">
-// Copyright (c) 2009 All Rights Reserved
-// </copyright>
-// <author>Kevin Nessland</author>
-// <email>kevinnessland@gmail.com</email>
-// <date>2009-07-08</date>
-// <summary>Contains native methods.</summary>
-
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Wraps P/Invoke methods.

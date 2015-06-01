@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Database.Database.Collections;
+using System.Database.Database.FileStorage;
+using System.Database.Storage.Services;
 using System.IO;
 using System.Linq;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database
 {
     /// <summary>
     /// The LiteDB database. Used for create a LiteDB instance and use all storage resoures. It's the database connection

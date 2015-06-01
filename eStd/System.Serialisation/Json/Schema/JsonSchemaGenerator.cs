@@ -1,33 +1,9 @@
-#region License
-// Copyright (c) 2007 James Newton-King
-//
-// Permission is hereby granted, free of charge, to any person
-// obtaining a copy of this software and associated documentation
-// files (the "Software"), to deal in the Software without
-// restriction, including without limitation the rights to use,
-// copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following
-// conditions:
-//
-// The above copyright notice and this permission notice shall be
-// included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-// OTHER DEALINGS IN THE SOFTWARE.
-#endregion
-
 using System;
 using System.Globalization;
 using System.ComponentModel;
 using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
+using System.Serialisation.Json.Schema;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Utilities;
 using Newtonsoft.Json.Serialization;
 #if NET20
@@ -37,7 +13,7 @@ using System.Linq;
 
 #endif
 
-namespace Newtonsoft.Json.Schema
+namespace System.Serialisation.Json.Schema
 {
     /// <summary>
     /// <para>
@@ -299,12 +275,12 @@ namespace Newtonsoft.Json.Schema
 
                         if (CurrentSchema.Type == JsonSchemaType.Integer && type.IsEnum() && !type.IsDefined(typeof(FlagsAttribute), true))
                         {
-                            CurrentSchema.Enum = new List<JToken>();
+                            CurrentSchema.Enum = new List<System.Serialisation.Json.Linq.JToken>();
 
                             IList<EnumValue<long>> enumValues = EnumUtils.GetNamesAndValues<long>(type);
                             foreach (EnumValue<long> enumValue in enumValues)
                             {
-                                JToken value = JToken.FromObject(enumValue.Value);
+                                System.Serialisation.Json.Linq.JToken value = System.Serialisation.Json.Linq.JToken.FromObject(enumValue.Value);
 
                                 CurrentSchema.Enum.Add(value);
                             }
@@ -384,7 +360,7 @@ namespace Newtonsoft.Json.Schema
                     JsonSchema propertySchema = GenerateInternal(property.PropertyType, property.Required, !optional);
 
                     if (property.DefaultValue != null)
-                        propertySchema.Default = JToken.FromObject(property.DefaultValue);
+                        propertySchema.Default = System.Serialisation.Json.Linq.JToken.FromObject(property.DefaultValue);
 
                     CurrentSchema.Properties.Add(property.PropertyName, propertySchema);
                 }

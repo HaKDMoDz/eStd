@@ -1,9 +1,7 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
+using System.Parsing;
 
-namespace Eto.Parse.Writers.Display
+namespace System.Parsing.Writers.Display
 {
 	public class ParserWriter<T> : TextParserWriter.IParserWriterHandler
 		where T: Parser
@@ -41,5 +39,4 @@ namespace Eto.Parse.Writers.Display
 			return name;
 		}
 	}
-	
 }

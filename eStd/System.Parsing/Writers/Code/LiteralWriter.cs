@@ -1,14 +1,12 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class LiteralWriter : ParserWriter<LiteralTerminal>
 	{
-		public override void WriteObject(TextParserWriterArgs args, LiteralTerminal parser, string name)
-		{
+        public override void WriteObject(System.Parsing.TextParserWriterArgs args, LiteralTerminal parser, string name)
+        {
 			base.WriteObject(args, parser, name);
 			if (parser.CaseSensitive != null)
 				args.Output.WriteLine("{0}.CaseSensitive = {1};", name, parser.CaseSensitive.ToString().ToLowerInvariant());

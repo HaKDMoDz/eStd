@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     public class MarkupRegexHelper
     {

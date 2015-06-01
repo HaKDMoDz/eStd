@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Text;
 using Microsoft.Win32;
 
-namespace Creek.IO.FilterBuilder
+namespace System.IO.FilterBuilder
 {
     /// <summary>
     /// A simple class allowing you to easily create dialogue filters.

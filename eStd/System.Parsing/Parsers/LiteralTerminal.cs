@@ -1,6 +1,6 @@
-using Eto.Parse;
+using System.Parsing;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class LiteralTerminal : Parser
 	{

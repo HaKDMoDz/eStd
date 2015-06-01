@@ -1,9 +1,8 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing;
 using System.Collections.Generic;
-using System.IO;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class ListWriter<T> : ParserWriter<T>
 		where T: ListParser

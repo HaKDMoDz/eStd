@@ -4,4 +4,3 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsin
 C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.pdb
 C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Parsing.dll
 C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Parsing.pdb
-C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Parsing\obj\Debug\System.Parsing.csprojResolveAssemblyReference.cache

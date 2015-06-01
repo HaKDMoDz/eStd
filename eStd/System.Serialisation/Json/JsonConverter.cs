@@ -25,9 +25,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Serialisation.Json;
+using System.Serialisation.Json.Schema;
 using System.Text;
 using Newtonsoft.Json.Utilities;
-using Newtonsoft.Json.Schema;
 
 namespace Newtonsoft.Json
 {

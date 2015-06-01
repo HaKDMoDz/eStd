@@ -1,8 +1,8 @@
 ﻿using System;
+using System.IO.Simulator.Native;
 using System.Runtime.InteropServices;
-using Creek.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// Implements the <see cref="IInputMessageDispatcher"/> by calling <see cref="NativeMethods.SendInput"/>.

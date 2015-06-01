@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using SharpFileSystem;
 
-namespace SharpFileSystem.Collections
+namespace System.IO.VFilesystem.Collections
 {
     public class TypeDictionary<T> : ITypeDictionary<T>, IServiceProvider
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class EventHandlerExtenders
     {

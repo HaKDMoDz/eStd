@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using System.Parsers.CSS;
 
-namespace Creek.Parsers.CSS
+namespace System.Parsers.CSS
 {
     /// <summary>
     /// Class to hold information for single CSS rule.

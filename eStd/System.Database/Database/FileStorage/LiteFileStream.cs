@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
+using System.Database.Database;
 using System.IO;
 using System.Linq;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.FileStorage
 {
     public class LiteFileStream : Stream
     {

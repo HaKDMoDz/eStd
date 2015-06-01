@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Creek.Parsers
+namespace System.Parsers
 {
     /// <summary>
     /// This is a mathematical expression parser that allows you to parser a string value,

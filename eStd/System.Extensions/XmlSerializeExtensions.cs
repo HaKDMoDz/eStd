@@ -3,7 +3,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     ///     Extension methods for the XmlSerialize

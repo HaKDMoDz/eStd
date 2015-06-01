@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Storage.Structures;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {
@@ -34,7 +34,7 @@ namespace LiteDB
                 var value = id.Normalize(col.PK.Options);
 
                 // find indexNode using PK index
-                var node = this.Database.Indexer.Find(col.PK, value, false, Query.Ascending);
+                var node = this.Database.Indexer.Find(col.PK, value, false, Query.Query.Ascending);
 
                 // if not found, abort transaction and returns false
                 if (node == null)
@@ -59,7 +59,7 @@ namespace LiteDB
         /// <summary>
         /// Remove all document based on a Query object. Returns removed document counts
         /// </summary>
-        public virtual int Delete(Query query)
+        public virtual int Delete(Query.Query query)
         {
             // start transaction
             this.Database.Transaction.Begin();

@@ -2,10 +2,11 @@
 using System.Diagnostics;
 using System.IO;
 using System.Globalization;
+using System.Localisation;
+using System.Localisation.Loaders;
 using System.Text;
-using Creek.I18N.Gettext.Loaders;
 
-namespace Creek.I18N.Gettext
+namespace System.Localisation
 {
 	/// <summary>
 	/// Represents a Gettext catalog instance.

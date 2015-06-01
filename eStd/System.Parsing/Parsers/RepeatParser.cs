@@ -1,8 +1,8 @@
 using System;
-using Eto.Parse;
+using System.Parsing;
 using System.Linq;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class RepeatParser : UnaryParser, ISeparatedParser
 	{

@@ -1,4 +1,7 @@
-﻿namespace Eto.Parse.Parsers
+﻿using System.Parsing;
+using System.Parsing.Parsers;
+
+namespace System.Parsing.Parsers
 {
     /// <summary>
     /// Parser, which matches a single UTF-32 surrogate pair character

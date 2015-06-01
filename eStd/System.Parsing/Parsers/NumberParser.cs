@@ -1,9 +1,9 @@
 using System;
-using System.Collections.Generic;
 using System.Globalization;
+using System.Parsing;
 using System.Reflection;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public class NumberParser : Parser
 	{
@@ -123,4 +123,3 @@ namespace Eto.Parse.Parsers
 		}
 	}
 }
-

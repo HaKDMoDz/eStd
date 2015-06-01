@@ -1,4 +1,4 @@
-﻿namespace Polenter.Serialization
+﻿namespace System.Serialisation
 {
     ///<summary>
     ///  What format has the serialized binary file. It could be SizeOptimized or Burst.

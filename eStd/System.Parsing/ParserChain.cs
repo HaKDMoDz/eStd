@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Base parser chain object to handle recursive calls

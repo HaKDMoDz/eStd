@@ -1,9 +1,7 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
+using System.Parsing;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class ParserWriter<T> : TextParserWriter.IParserWriterHandler
 		where T: Parser

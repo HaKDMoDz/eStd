@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Polenter.Serialization.Advanced
+namespace System.Serialisation.Advanced
 {
     ///<summary>
     ///</summary>

@@ -1,4 +1,5 @@
-﻿namespace Creek.Parsers.Multipart {
+﻿namespace System.Parsers.Multipart
+{
     /// <summary>
     /// Represents a binary file in a multipart request
     /// </summary>

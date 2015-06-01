@@ -1,4 +1,4 @@
-﻿namespace Creek.Extensibility.Plugins
+﻿namespace System.Extensibillity
 {
     /// <summary>
     /// Represents a plugin from application perspective.

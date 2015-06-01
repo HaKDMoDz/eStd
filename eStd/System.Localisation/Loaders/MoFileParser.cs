@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 
-namespace Creek.I18N.Gettext.Loaders
+namespace System.Localisation.Loaders
 {
     /// <summary>
     /// MO file format parser.

@@ -1,4 +1,5 @@
-﻿namespace Creek.Parsers.Multipart {
+﻿namespace System.Parsers.Multipart
+{
     /// <summary>
     /// Controls how file data is handled by the parser
     /// </summary>

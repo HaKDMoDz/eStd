@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// 	Extension methods for string[]

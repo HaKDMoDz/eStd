@@ -30,12 +30,11 @@ using System.Globalization;
 using System.Numerics;
 #endif
 #if !(NET20 || NET35 || PORTABLE40)
+using System.Serialisation.Json.Converters;
 using System.Threading.Tasks;
 #endif
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Utilities;
 using System.Xml;
-using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using System.Text;
 #if !(NET20 || PORTABLE40)
@@ -589,7 +588,7 @@ namespace Newtonsoft.Json
         /// </returns>
         public static string SerializeObject(object value, Type type, JsonSerializerSettings settings)
         {
-            JsonSerializer jsonSerializer = JsonSerializer.CreateDefault(settings);
+            System.Serialisation.Json.JsonSerializer jsonSerializer = System.Serialisation.Json.JsonSerializer.CreateDefault(settings);
 
             return SerializeObjectInternal(value, type, jsonSerializer);
         }
@@ -626,13 +625,13 @@ namespace Newtonsoft.Json
         /// </returns>
         public static string SerializeObject(object value, Type type, Formatting formatting, JsonSerializerSettings settings)
         {
-            JsonSerializer jsonSerializer = JsonSerializer.CreateDefault(settings);
+            System.Serialisation.Json.JsonSerializer jsonSerializer = System.Serialisation.Json.JsonSerializer.CreateDefault(settings);
             jsonSerializer.Formatting = formatting;
 
             return SerializeObjectInternal(value, type, jsonSerializer);
         }
 
-        private static string SerializeObjectInternal(object value, Type type, JsonSerializer jsonSerializer)
+        private static string SerializeObjectInternal(object value, Type type, System.Serialisation.Json.JsonSerializer jsonSerializer)
         {
             StringBuilder sb = new StringBuilder(256);
             StringWriter sw = new StringWriter(sb, CultureInfo.InvariantCulture);
@@ -835,7 +834,7 @@ namespace Newtonsoft.Json
         {
             ValidationUtils.ArgumentNotNull(value, "value");
 
-            JsonSerializer jsonSerializer = JsonSerializer.CreateDefault(settings);
+            System.Serialisation.Json.JsonSerializer jsonSerializer = System.Serialisation.Json.JsonSerializer.CreateDefault(settings);
 
             // by default DeserializeObject should check for additional content
             if (!jsonSerializer.IsCheckAdditionalContentSet())
@@ -938,7 +937,7 @@ namespace Newtonsoft.Json
         /// </param>
         public static void PopulateObject(string value, object target, JsonSerializerSettings settings)
         {
-            JsonSerializer jsonSerializer = JsonSerializer.CreateDefault(settings);
+            System.Serialisation.Json.JsonSerializer jsonSerializer = System.Serialisation.Json.JsonSerializer.CreateDefault(settings);
 
             using (JsonReader jsonReader = new JsonTextReader(new StringReader(value)))
             {

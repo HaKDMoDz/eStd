@@ -11,3 +11,9 @@ C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowse
 C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.csproj.GenerateResource.Cache
 C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.exe
 C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\SamplesBrowser.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\System.Wpf.Mvvm.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\System.Wpf.Mvvm.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\System.Wpf.MarkupExtensions.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\bin\Debug\System.Wpf.MarkupExtensions.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\DownloadDialog.baml
+C:\Users\Chris\Documents\GitHub\eStd\eStd\SamplesBrowser\obj\Debug\DownloadDialog.g.cs

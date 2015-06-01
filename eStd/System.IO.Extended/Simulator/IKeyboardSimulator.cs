@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Creek.IO.Simulator.Native;
+using System.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// The service contract for a keyboard simulator for the Windows platform.

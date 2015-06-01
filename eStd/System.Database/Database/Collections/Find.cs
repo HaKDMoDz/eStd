@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Database.Document;
+using System.Database.Query;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {
@@ -14,7 +15,7 @@ namespace LiteDB
         /// <summary>
         /// Find documents inside a collection using Query object. Must have indexes in query expression 
         /// </summary>
-        public IEnumerable<T> Find(Query query, int skip = 0, int limit = int.MaxValue)
+        public IEnumerable<T> Find(Query.Query query, int skip = 0, int limit = int.MaxValue)
         {
             if (query == null) throw new ArgumentNullException("query");
 
@@ -77,13 +78,13 @@ namespace LiteDB
         {
             if (id == null || id.IsNull) throw new ArgumentNullException("id");
 
-            return this.Find(Query.EQ("_id", id)).SingleOrDefault();
+            return this.Find(Query.Query.EQ("_id", id)).SingleOrDefault();
         }
 
         /// <summary>
         /// Find the first document using Query object. Returns null if not found. Must have index on query expression.
         /// </summary>
-        public T FindOne(Query query)
+        public T FindOne(Query.Query query)
         {
             return this.Find(query).FirstOrDefault();
         }
@@ -101,7 +102,7 @@ namespace LiteDB
         /// </summary>
         public IEnumerable<T> FindAll()
         {
-            return this.Find(Query.All());
+            return this.Find(Query.Query.All());
         }
 
         #endregion
@@ -123,7 +124,7 @@ namespace LiteDB
         /// <summary>
         /// Count documnets with a query. This method does not deserialize any document. Needs indexes on query expression
         /// </summary>
-        public int Count(Query query)
+        public int Count(Query.Query query)
         {
             if (query == null) throw new ArgumentNullException("query");
 
@@ -158,7 +159,7 @@ namespace LiteDB
         /// <summary>
         /// Returns true if query returns any document. This method does not deserialize any document. Needs indexes on query expression
         /// </summary>
-        public bool Exists(Query query)
+        public bool Exists(Query.Query query)
         {
             if (query == null) throw new ArgumentNullException("query");
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public abstract class ListParser : Parser
 	{
@@ -97,4 +97,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

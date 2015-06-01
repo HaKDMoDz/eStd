@@ -1,9 +1,8 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Text;
+using System.Parsing;
 using System.Linq;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class InverseWriter<T> : ParserWriter<T>
 		where T: Parser, IInverseParser
@@ -16,4 +15,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

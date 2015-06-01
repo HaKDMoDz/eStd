@@ -1,9 +1,9 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
+using System.Parsing;
+using System.Parsing.Writers;
+using System.Parsing.Writers.Code;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class GrammarWriter : UnaryWriter<Grammar>
 	{
@@ -61,5 +61,4 @@ namespace Eto.Parse.Writers.Code
 			}
 		}
 	}
-	
 }

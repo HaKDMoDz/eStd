@@ -1,4 +1,6 @@
-﻿namespace Creek.Extensibility.Plugins
+﻿using System.Extensibillity;
+
+namespace System.Extensibillity
 {
     /// <summary>
     /// This interface is implemented all plugins.

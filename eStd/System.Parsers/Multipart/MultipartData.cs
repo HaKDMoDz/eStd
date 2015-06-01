@@ -1,4 +1,5 @@
-﻿namespace Creek.Parsers.Multipart {
+﻿namespace System.Parsers.Multipart
+{
     /// <summary>
     /// One part of data in a multipart request's body.
     /// </summary>

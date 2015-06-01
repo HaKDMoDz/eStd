@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Allows developer to set default values for CultureInfo and Encoding
@@ -35,4 +35,3 @@ namespace Creek.Extensions
         public static CultureInfo DefaultCulture { get; set; }
     }
 }
-

@@ -1,17 +1,10 @@
-﻿// <copyright file="XmlExtensions.cs" company="Edge Extensions Project">
-// Copyright (c) 2009 All Rights Reserved
-// </copyright>
-// <author>Kevin Nessland</author>
-// <email>kevinnessland@gmail.com</email>
-// <date>2009-07-08</date>
-// <summary>Contains Xml-related extension methods.</summary>
-
-using Creek.Dynamics;
-using System.Linq;
+﻿using System.Linq;
+using System.Runtime.Dynamic;
 using System.Text;
 using System.Xml;
+using System.Linq;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Extension methods for the XmlNode / XmlDocument classes and its sub classes
@@ -172,12 +165,27 @@ namespace Creek.Extensions
 
         public static bool HasAttribute(this XmlElement e, string attrName)
         {
-            return e.Attributes.Cast<XmlAttribute>().Any(v => v.Name == attrName);
+            foreach (XmlAttribute att in e.Attributes)
+            {
+                if (att.Name == attrName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static XmlAttribute GetAttribute(this XmlElement e, string attrName)
         {
-            return e.Attributes.Cast<XmlAttribute>().FirstOrDefault(a => a.Name == attrName);
+            foreach (XmlAttribute att in e.Attributes)
+            {
+                if (att.Name == attrName)
+                {
+                    return att;
+                }
+            }
+
+            return null;
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Creek.IO
+namespace System.IO
 {
     public static class Keyboard
     {
@@ -32,8 +32,5 @@ namespace Creek.IO
             }
             SendKeys.Send(sb.ToString());
         }
-
-
-
     }
 }

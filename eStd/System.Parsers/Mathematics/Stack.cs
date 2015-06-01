@@ -1,4 +1,6 @@
-namespace Lib.Parsing.Mathematics
+using System.Parsers.Mathematics;
+
+namespace System.Parsers.Mathematics
 {
     public abstract class Stack<t> : Stack
     {

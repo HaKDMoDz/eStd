@@ -1,6 +1,7 @@
 using System;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Arguments to determine if a parser is contained within another
@@ -14,5 +15,4 @@ namespace Eto.Parse
 			this.Parser = parser;
 		}
 	}
-	
 }

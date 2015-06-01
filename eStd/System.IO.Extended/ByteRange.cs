@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creek.IO
+namespace System.IO
 {
     public struct ByteRange
     {

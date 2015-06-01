@@ -1,8 +1,9 @@
 using System;
 using System.IO;
 using System.CodeDom.Compiler;
+using System.Parsing;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public class TextParserWriter : ParserWriter<TextParserWriterArgs>
 	{

@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Parsing;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
     /// <summary>
     /// Base parser for matching UTF-32 surrogate pair characters

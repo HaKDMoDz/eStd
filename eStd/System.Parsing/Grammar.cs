@@ -1,8 +1,8 @@
 using System;
-using Eto.Parse.Scanners;
 using System.Collections.Generic;
+using System.Parsing.Scanners;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	/// <summary>
 	/// Defines the top level parser (a grammar) used to parse text
@@ -178,4 +178,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

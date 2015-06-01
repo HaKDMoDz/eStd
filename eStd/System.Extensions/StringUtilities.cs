@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains various string-related tools and utilities.

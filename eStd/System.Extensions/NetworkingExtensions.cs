@@ -1,17 +1,9 @@
-﻿// <copyright file="NetworkingExtensions.cs" company="Edge Extensions Project">
-// Copyright (c) 2009 All Rights Reserved
-// </copyright>
-// <author>Kevin Nessland</author>
-// <email>kevinnessland@gmail.com</email>
-// <date>2009-07-08</date>
-// <summary>Contains String-related extension methods.</summary>
-
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     /// <summary>
     /// Contains various useful networking-related extensions.

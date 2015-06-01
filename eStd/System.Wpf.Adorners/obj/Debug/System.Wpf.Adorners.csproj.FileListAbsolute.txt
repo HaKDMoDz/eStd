@@ -1,0 +1,4 @@
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Wpf.Adorners.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\Build\System.Wpf.Adorners.pdb
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.Adorners\obj\Debug\System.Wpf.Adorners.dll
+C:\Users\Chris\Documents\GitHub\eStd\eStd\System.Wpf.Adorners\obj\Debug\System.Wpf.Adorners.pdb

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class MathExtensions
     {

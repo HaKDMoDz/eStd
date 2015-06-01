@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     /// <summary>
     /// This class represents a document of markup text with a hierarchy structure of markup tags.

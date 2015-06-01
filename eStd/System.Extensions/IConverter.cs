@@ -1,4 +1,4 @@
-﻿namespace Creek.Extensions
+﻿namespace System.Extensions
 {
     /// <summary>
     /// 	Generic converter interface used to allow extension methods to be applied.

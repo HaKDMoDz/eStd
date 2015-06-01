@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Database.Database.Collections;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace LiteDB
+namespace System.Database.Database.Collections
 {
     public partial class LiteCollection<T>
     {

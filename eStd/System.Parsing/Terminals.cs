@@ -1,9 +1,10 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing;
+using System.Parsing.Parsers;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	public static class Terminals
 	{
@@ -87,4 +88,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

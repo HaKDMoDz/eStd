@@ -1,6 +1,6 @@
-﻿using Creek.IO.Simulator.Native;
+﻿using System.IO.Simulator.Native;
 
-namespace Creek.IO.Simulator
+namespace System.IO.Simulator
 {
     /// <summary>
     /// The contract for a service that interprets the state of input devices.

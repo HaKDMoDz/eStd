@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Newtonsoft.Json.Linq.JsonPath
+namespace System.Serialisation.Json.Linq.JsonPath
 {
     internal class ArrayMultipleIndexFilter : PathFilter
     {

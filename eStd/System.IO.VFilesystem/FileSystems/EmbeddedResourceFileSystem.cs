@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Reflection;
 
-namespace SharpFileSystem.Resources
+namespace System.IO.VFilesystem.FileSystems
 {
-    public class EmbeddedResourceFileSystem : IFileSystem
+    public class EmbeddedResourceFileSystem : SharpFileSystem.IFileSystem
     {
         public Assembly Assembly { get; private set; }
         public EmbeddedResourceFileSystem(Assembly assembly)
@@ -15,38 +14,38 @@ namespace SharpFileSystem.Resources
             Assembly = assembly;
         }
 
-        public ICollection<FileSystemPath> GetEntities(FileSystemPath path)
+        public ICollection<SharpFileSystem.FileSystemPath> GetEntities(SharpFileSystem.FileSystemPath path)
         {
             if (!path.IsRoot)
                 throw new DirectoryNotFoundException();
-            return Assembly.GetManifestResourceNames().Select(name => FileSystemPath.Root.AppendFile(name)).ToArray();
+            return Assembly.GetManifestResourceNames().Select(name => SharpFileSystem.FileSystemPath.Root.AppendFile(name)).ToArray();
         }
 
-        public bool Exists(FileSystemPath path)
+        public bool Exists(SharpFileSystem.FileSystemPath path)
         {
             return path.IsRoot || !path.IsDirectory && Assembly.GetManifestResourceNames().Contains(path.EntityName);
         }
 
-        public Stream OpenFile(FileSystemPath path, FileAccess access)
+        public Stream OpenFile(SharpFileSystem.FileSystemPath path, FileAccess access)
         {
             if (access == FileAccess.Write)
                 throw new NotSupportedException();
-            if (path.IsDirectory || path.ParentPath != FileSystemPath.Root)
+            if (path.IsDirectory || path.ParentPath != SharpFileSystem.FileSystemPath.Root)
                 throw new FileNotFoundException();
             return Assembly.GetManifestResourceStream(path.EntityName);
         }
 
-        public Stream CreateFile(FileSystemPath path)
+        public Stream CreateFile(SharpFileSystem.FileSystemPath path)
         {
             throw new NotSupportedException();
         }
 
-        public void CreateDirectory(FileSystemPath path)
+        public void CreateDirectory(SharpFileSystem.FileSystemPath path)
         {
             throw new NotSupportedException();
         }
 
-        public void Delete(FileSystemPath path)
+        public void Delete(SharpFileSystem.FileSystemPath path)
         {
             throw new NotSupportedException();
         }

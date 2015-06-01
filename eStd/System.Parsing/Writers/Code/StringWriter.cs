@@ -1,13 +1,13 @@
 using System;
-using Eto.Parse.Parsers;
+using System.Parsing.Parsers;
 using System.Linq;
 
-namespace Eto.Parse.Writers.Code
+namespace System.Parsing.Writers.Code
 {
 	public class StringWriter : ParserWriter<StringParser>
 	{
-		public override void WriteContents(TextParserWriterArgs args, StringParser parser, string name)
-		{
+        public override void WriteContents(System.Parsing.TextParserWriterArgs args, StringParser parser, string name)
+        {
 			base.WriteContents(args, parser, name);
 
 			string quoteChars = null;
@@ -32,4 +32,3 @@ namespace Eto.Parse.Writers.Code
 		}
 	}
 }
-

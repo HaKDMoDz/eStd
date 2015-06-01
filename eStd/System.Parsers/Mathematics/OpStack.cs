@@ -1,6 +1,4 @@
-using Lib.Parsing.Mathematics;
-
-namespace Creek.Parsers.Mathematics
+namespace System.Parsers.Mathematics
 {
     public class OpStack : Stack<string>
     {

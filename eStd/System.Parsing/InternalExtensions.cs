@@ -1,6 +1,6 @@
 using System;
 
-namespace Eto.Parse
+namespace System.Parsing
 {
 	static class InternalExtensions
 	{
@@ -11,4 +11,3 @@ namespace Eto.Parse
 		}
 	}
 }
-

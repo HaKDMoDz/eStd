@@ -1,14 +1,13 @@
 using System;
-using Eto.Parse.Parsers;
-using Eto.Parse.Scanners;
+using System.Parsing.Parsers;
+using System.Parsing.Writers;
 using System.Collections.Generic;
 using System.Linq;
-using Eto.Parse.Writers;
 using System.IO;
-using System.CodeDom.Compiler;
 using System.Globalization;
+using System.Parsing.Scanners;
 
-namespace Eto.Parse.Grammars
+namespace System.Parsing.Grammars
 {
 	/// <summary>
 	/// Styles for the <see cref="EbnfGrammar"/>

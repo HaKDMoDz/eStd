@@ -28,6 +28,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
 using System.Runtime.CompilerServices;
+using System.Serialisation.Json;
 using Newtonsoft.Json.Utilities;
 
 namespace Newtonsoft.Json.Serialization

@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class SocketExtensions
     {

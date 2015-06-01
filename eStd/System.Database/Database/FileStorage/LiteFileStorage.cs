@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Database.Database;
+using System.Database.Database.Collections;
+using System.Database.Database.FileStorage;
 using System.IO;
 using System.Linq;
-using System.Text;
+using LiteDB;
+using LiteDB;
 
-namespace LiteDB
+namespace System.Database.Database.FileStorage
 {
     /// <summary>
     /// Storage is a special collection to store files/streams.
@@ -157,8 +161,8 @@ namespace LiteDB
         public IEnumerable<LiteFileInfo> Find(string startsWith)
         {
             var result = string.IsNullOrEmpty(startsWith) ?
-                this.Files.Find(Query.All()) :
-                this.Files.Find(Query.StartsWith("_id", startsWith));
+                this.Files.Find(Query.Query.All()) :
+                this.Files.Find(Query.Query.StartsWith("_id", startsWith));
 
             foreach (var doc in result)
             {
@@ -171,7 +175,7 @@ namespace LiteDB
         /// </summary>
         public bool Exists(string id)
         {
-            return this.Files.Exists(Query.EQ("_id", id));
+            return this.Files.Exists(Query.Query.EQ("_id", id));
         }
 
         /// <summary>

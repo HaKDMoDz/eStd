@@ -1,7 +1,7 @@
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace Creek.IO
+namespace System.IO
 {
     /// <summary>
     /// Erstellung und Löschung nicht persistenter virtueller Laufwerke.

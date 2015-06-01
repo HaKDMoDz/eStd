@@ -1,9 +1,8 @@
 using System;
-using Eto.Parse.Parsers;
-using System.Collections.Generic;
-using System.IO;
+using System.Parsing;
+using System.Parsing.Writers.Display;
 
-namespace Eto.Parse.Writers.Display
+namespace System.Parsing.Writers.Display
 {
 	public class ListWriter : ParserWriter<ListParser>
 	{
@@ -12,5 +11,4 @@ namespace Eto.Parse.Writers.Display
 			parser.Items.ForEach(r => args.Write(r));
 		}
 	}
-	
 }

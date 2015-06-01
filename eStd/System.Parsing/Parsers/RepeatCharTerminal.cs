@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Parsing;
+using System.Parsing.Parsers;
 
-namespace Eto.Parse.Parsers
+namespace System.Parsing.Parsers
 {
 	public sealed class RepeatCharItem : ICloneable
 	{
@@ -105,4 +107,3 @@ namespace Eto.Parse.Parsers
 		}
 	}
 }
-

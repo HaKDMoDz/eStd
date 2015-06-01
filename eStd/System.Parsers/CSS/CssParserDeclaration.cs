@@ -1,4 +1,4 @@
-namespace Creek.Parsers.CSS
+namespace System.Parsers.CSS
 {
     /// <summary>
     /// Class to hold information for a single CSS declaration.

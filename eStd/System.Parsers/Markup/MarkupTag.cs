@@ -3,9 +3,10 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Parsers.Markup;
 using System.Text.RegularExpressions;
 
-namespace Creek.Parsers.Markup
+namespace System.Parsers.Markup
 {
     /// <summary>
     /// This class represents an individual tag element from the markup text.

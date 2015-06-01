@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Creek.Extensions
+namespace System.Extensions
 {
     public static class ConstructorExtensions
     {

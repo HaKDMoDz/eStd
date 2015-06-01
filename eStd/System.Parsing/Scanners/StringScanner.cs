@@ -1,6 +1,6 @@
 using System;
 
-namespace Eto.Parse.Scanners
+namespace System.Parsing.Scanners
 {
 	public class StringScanner : Scanner
 	{
